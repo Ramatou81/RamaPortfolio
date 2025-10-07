@@ -50,41 +50,51 @@
 <body class="bg-white text-gray-900 font-sans">
 
 <!-- Header moderne -->
-<header class="bg-secondary-900/90 backdrop-blur-md sticky top-0 z-50 border-b border-secondary-800">
-  <div class="max-w-6xl mx-auto px-6 py-4">
-    <div class="flex justify-between items-center">
+<header class="bg-secondary-900/90 backdrop-blur-sm sticky top-0 z-50 border-b border-secondary-800">
+  <div class="w-full px-6 py-2">
+    <div class="flex items-center justify-between max-w-7xl mx-auto">
+      
+      <!-- Logo + Nom -->
       <a href="#" class="flex items-center space-x-3 group">
-      <div class="relative w-16 h-16 flex items-center justify-center bg-gradient-to-br from-primary-400 via-primary-500 to-primary-600 rounded-full shadow-xl group-hover:shadow-primary-500/30 transition-all duration-300 overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-tr from-primary-600/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-        <span class="relative text-xl font-bold text-white tracking-wider transform group-hover:scale-110 transition-transform duration-300" style="font-family: 'Montserrat', sans-serif;">KSR</span>
-      </div>
+        <div class="relative w-12 h-12 flex items-center justify-center bg-gradient-to-br from-primary-400 via-primary-500 to-primary-600 rounded-full shadow-lg group-hover:shadow-primary-500/30 transition-all duration-300 overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-tr from-primary-600/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          
+          <!-- Logo -->
+          <img src="images/Logo.png" 
+               alt="Logo de Karimou Seyni Ramatou"
+               class="w-8 h-8 object-contain transform group-hover:scale-110 transition-transform duration-300">
+        </div>
 
-        <h1 class="text-xl font-bold bg-gradient-to-r from-primary-400 via-primary-500 to-primary-600 bg-clip-text text-transparent group-hover:from-primary-500 group-hover:to-primary-400 transition-all duration-300">
+        <h1 class="text-base md:text-lg font-bold bg-gradient-to-r from-primary-400 via-primary-500 to-primary-600 bg-clip-text text-transparent group-hover:from-primary-500 group-hover:to-primary-400 transition-all duration-300">
           Karimou Seyni Ramatou
         </h1>
       </a>
-      
-      <nav class="hidden md:flex space-x-8 items-center">
-      <a href="#about" class="relative font-medium text-gray-300 hover:text-primary-400 transition-all duration-300 group">
-        À propos
-        <span class="absolute inset-x-0 -bottom-1 h-0.5 bg-primary-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
-      </a>
-      <a href="#projects" class="relative font-medium text-gray-300 hover:text-primary-400 transition-all duration-300 group">
-        Projets
-        <span class="absolute inset-x-0 -bottom-1 h-0.5 bg-primary-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
-      </a>
-      <a href="#experience" class="relative font-medium text-gray-300 hover:text-primary-400 transition-all duration-300 group">
-        Expériences
-        <span class="absolute inset-x-0 -bottom-1 h-0.5 bg-primary-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
-      </a>
-      <a href="#skills" class="relative font-medium text-gray-300 hover:text-primary-400 transition-all duration-300 group">
-        Compétences
-        <span class="absolute inset-x-0 -bottom-1 h-0.5 bg-primary-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
-      </a>
-      <a href="#contact" class="px-4 py-2 bg-gradient-to-r from-primary-500 to-primary-700 text-white rounded-md hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300">
-        Contact
-      </a>
-    </nav>
+      <!-- Menu principal -->
+      <nav id="nav-menu" class="hidden md:flex items-center space-x-8 ml-auto">
+        <a href="#about" class="relative font-medium text-gray-300 hover:text-primary-400 transition-all duration-300 group">
+          À propos
+          <span class="absolute inset-x-0 -bottom-1 h-0.5 bg-primary-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+        </a>
+        <a href="#projects" class="relative font-medium text-gray-300 hover:text-primary-400 transition-all duration-300 group">
+          Projets
+          <span class="absolute inset-x-0 -bottom-1 h-0.5 bg-primary-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+        </a>
+        <a href="#experience" class="relative font-medium text-gray-300 hover:text-primary-400 transition-all duration-300 group">
+          Expériences
+          <span class="absolute inset-x-0 -bottom-1 h-0.5 bg-primary-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+        </a>
+        <a href="#skills" class="relative font-medium text-gray-300 hover:text-primary-400 transition-all duration-300 group">
+          Compétences
+          <span class="absolute inset-x-0 -bottom-1 h-0.5 bg-primary-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+        </a>
+        <a href="#contact" class="px-3 py-1.5 bg-gradient-to-r from-primary-500 to-primary-700 text-white rounded-md hover:shadow-md hover:shadow-primary-500/20 transition-all duration-300 text-sm font-medium">
+          Contact
+        </a>
+      </nav>
+    
+
+    
+
       <!-- Menu mobile (burger) -->
       <button class="md:hidden text-gray-300 hover:text-primary-400 focus:outline-none transition-colors duration-300">
         <i class="fas fa-bars text-2xl"></i>
@@ -372,7 +382,7 @@ Développeuse
   </div>
 </section>
 
-<!-- Projets -->
+<!-- SECTION PROJETS COMPLÈTE ET CORRIGÉE -->
 <section id="projects" class="py-20 bg-gradient-to-br from-gray-50 to-white">
   <div class="max-w-6xl mx-auto px-6">
     <div class="text-center mb-16">
@@ -384,68 +394,77 @@ Développeuse
       </p>
       <div class="w-24 h-1 bg-gradient-to-r from-primary-400 to-primary-600 mx-auto rounded mt-4"></div>
     </div>
-    
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Projet 1 - Saraounia Market -->
-      <div class="bg-secondary-800 rounded-lg border border-secondary-700 shadow-xl overflow-hidden group hover:shadow-2xl hover:border-primary-500/30 transition-all duration-300 transform hover:-translate-y-2">
-       <div class="relative w-full max-h-[500px]">
-  <img src="images/saraounia-market.png"
-       alt="Saraounia Market"
-       class="w-full h-auto object-contain bg-black">
-  <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
-</div>
 
-        <div class="p-8">
+    <!-- Grille des projets -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Projet 1 - Saraounia Market -->
+      <div class="flex flex-col bg-secondary-800 rounded-xl border border-secondary-700 shadow-xl overflow-hidden group hover:shadow-2xl hover:border-primary-500/40 transition-all duration-300 hover:-translate-y-2">
+        <div class="relative w-full h-56 bg-black overflow-hidden">
+          <img src="images/saraounia-market.png"
+               alt="Saraounia Market"
+               class="project-img w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 cursor-pointer" />
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+        </div>
+
+        <div class="flex flex-col flex-grow p-8">
           <div class="flex items-center justify-between mb-4">
-            <h3 class="font-bold text-2xl text-primary-400">Saraounia Market</h3>
-            <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm font-medium border border-secondary-600">2025</span>
+            <h3 class="font-extrabold text-2xl text-primary-400 tracking-tight">Saraounia Market</h3>
+            <span class="px-3 py-1 bg-secondary-700/60 text-primary-400 rounded-full text-sm font-semibold border border-secondary-600">2025</span>
           </div>
-          <p class="text-gray-300 mb-6 leading-relaxed">Une plateforme e-commerce innovante conçue pour les entrepreneurs africains, offrant un système de paiement sécurisé et une interface utilisateur intuitive. Intégration complète avec les systèmes de paiement mobile locaux.</p>
-          <div class="flex flex-wrap gap-2 mb-6">
-            <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">Ruby on Rails</span>
-            <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">Tailwind CSS</span>
-            <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">PostgreSQL</span>
-            <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">API REST</span>
+
+          <p class="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base flex-grow">
+            Une plateforme qui valorise les femmes entrepreneures et leurs produits innovants, mettant en lumière leur créativité et leur impact sur l'avenir.
+          </p>
+
+          <div class="flex flex-wrap gap-3 mb-6">
+            <span class="px-3 py-1 bg-secondary-700/60 text-primary-400 rounded-full text-sm font-medium border border-secondary-600 hover:bg-secondary-600 transition-colors">Ruby on Rails</span>
+            <span class="px-3 py-1 bg-secondary-700/60 text-primary-400 rounded-full text-sm font-medium border border-secondary-600 hover:bg-secondary-600 transition-colors">Tailwind CSS</span>
+            <span class="px-3 py-1 bg-secondary-700/60 text-primary-400 rounded-full text-sm font-medium border border-secondary-600 hover:bg-secondary-600 transition-colors">PostgreSQL</span>
+            <span class="px-3 py-1 bg-secondary-700/60 text-primary-400 rounded-full text-sm font-medium border border-secondary-600 hover:bg-secondary-600 transition-colors">API REST</span>
           </div>
-          <div class="flex items-center justify-between">
-            <a href="https://github.com/impact-plus1/Saraounia-Market-Places" target="_blank" 
-               class="inline-flex items-center text-primary-400 hover:text-primary-300 font-medium transition-colors">
-              <i class="fab fa-github mr-2"></i>Code source
-            </a>
-            <a href="https://github.com/impact-plus1/Saraounia-Market-Places" class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500 to-primary-700 text-white rounded-md hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300">
-              <i class="fas fa-external-link-alt mr-2"></i>Voir le projet
+
+          <div class="flex items-center justify-between mt-auto gap-3 flex-wrap">
+            <a href="#" class="inline-flex items-center text-primary-400 hover:text-primary-300 font-medium transition-colors text-sm">
+              <i class="fab fa-github mr-2 text-sm"></i>Code source sur demande
             </a>
           </div>
         </div>
       </div>
 
       <!-- Projet 2 - Project Manager -->
-      <div class="bg-secondary-800 rounded-lg border border-secondary-700 shadow-xl overflow-hidden group hover:shadow-2xl hover:border-primary-500/30 transition-all duration-300 transform hover:-translate-y-2">
-       <div class="relative w-full max-h-[500px]">
-  <img src="images/projet manager.png"
-       alt="Project Manager"
-       class="w-full h-auto object-contain bg-black">
-  <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
-</div>
+      <div class="flex flex-col bg-secondary-800 rounded-lg border border-secondary-700 shadow-xl overflow-hidden group hover:shadow-2xl hover:border-primary-500/30 transition-all duration-300 hover:-translate-y-2">
+        <div class="relative w-full h-56 bg-black overflow-hidden">
+          <img src="images/projet manager.png"
+               alt="Project Manager"
+               class="project-img w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 cursor-pointer" />
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+        </div>
 
-        <div class="p-8">
+        <div class="flex flex-col flex-grow p-8">
           <div class="flex items-center justify-between mb-4">
             <h3 class="font-bold text-2xl text-primary-400">Project Manager</h3>
-            <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm font-medium border border-secondary-600">2025</span>
+            <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">2025</span>
           </div>
-          <p class="text-gray-300 mb-6 leading-relaxed">Application web de gestion de projets permettant le suivi des tâches, la collaboration en temps réel et la génération de rapports détaillés. Inclut des fonctionnalités de tableau Kanban et de diagramme de Gantt.</p>
+
+          <p class="text-gray-300 mb-6 leading-relaxed flex-grow">
+            Application web de gestion de projets permettant le suivi des tâches, la collaboration en temps réel et la génération de rapports détaillés.
+          </p>
+
           <div class="flex flex-wrap gap-2 mb-6">
             <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">React.js</span>
             <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">Node.js</span>
             <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">Tailwind CSS</span>
             <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">API REST</span>
           </div>
-          <div class="flex items-center justify-between">
+
+          <div class="flex items-center justify-between mt-auto">
             <a href="https://github.com/Ramatou81/ProjetManager" target="_blank" 
                class="inline-flex items-center text-primary-400 hover:text-primary-300 font-medium transition-colors">
               <i class="fab fa-github mr-2"></i>Code source
             </a>
-            <a href="https://github.com/Ramatou81/ProjetManager" class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500 to-primary-700 text-white rounded-md hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300">
+            <a href="https://github.com/Ramatou81/ProjetManager" target="_blank" 
+               class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500 to-primary-700 text-white rounded-md hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300">
               <i class="fas fa-external-link-alt mr-2"></i>Voir le projet
             </a>
           </div>
@@ -453,151 +472,229 @@ Développeuse
       </div>
 
       <!-- Projet 3 - Plateforme de Blog -->
-      <div class="bg-secondary-800 rounded-lg border border-secondary-700 shadow-xl overflow-hidden group hover:shadow-2xl hover:border-primary-500/30 transition-all duration-300 transform hover:-translate-y-2">
-       <div class="relative w-full max-h-[500px]">
-  <img src="images/blog.png"
-       alt="Plateforme de Blog"
-       class="w-full h-auto object-contain bg-black">
-  <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
-</div>
-
-        <div class="p-8">
+      <div class="flex flex-col bg-secondary-800 rounded-lg border border-secondary-700 shadow-xl overflow-hidden group hover:shadow-2xl hover:border-primary-500/30 transition-all duration-300 hover:-translate-y-2">
+        <div class="relative w-full h-56 bg-black overflow-hidden">
+          <img src="images/blog.png"
+               alt="Plateforme de Blog"
+               class="project-img w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 cursor-pointer" />
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+        </div>
+      
+        <div class="flex flex-col flex-grow p-8">
           <div class="flex items-center justify-between mb-4">
             <h3 class="font-bold text-2xl text-primary-400">Plateforme de Blog</h3>
             <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm font-medium border border-secondary-600">2025</span>
           </div>
-          <p class="text-gray-300 mb-6 leading-relaxed">Système de blog multi-utilisateurs avec éditeur WYSIWYG, gestion des catégories, commentaires et système de modération. Intégration de l'authentification OAuth et optimisation SEO.</p>
+
+          <p class="text-gray-300 mb-6 leading-relaxed flex-grow">
+            Système de blog multi-utilisateurs avec éditeur WYSIWYG, gestion des catégories, commentaires et système de modération.
+          </p>
+
           <div class="flex flex-wrap gap-2 mb-6">
             <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">Ruby on Rails</span>
             <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">Rails</span>
             <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">PostgreSQL</span>
             <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">Tailwind CSS</span>
           </div>
+
           <div class="flex items-center justify-between">
             <a href="https://github.com/Ramatou81/MonBog" target="_blank" 
-              class="inline-flex items-center text-primary-400 hover:text-primary-300 font-medium transition-colors">
+               class="inline-flex items-center text-primary-400 hover:text-primary-300 font-medium transition-colors">
               <i class="fab fa-github mr-2"></i>Code source
             </a>
-            <a href="https://github.com/Ramatou81/MonBog" class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500 to-primary-700 text-white rounded-md hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300">
+            <a href="https://github.com/Ramatou81/MonBog" target="_blank" 
+               class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500 to-primary-700 text-white rounded-md hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300">
               <i class="fas fa-external-link-alt mr-2"></i>Voir le projet
             </a>
           </div>
         </div>
       </div>
 
-      <!-- Projet 4 - Système de Gestion des agents -->
-      <div class="bg-secondary-800 rounded-lg border border-secondary-700 shadow-xl overflow-hidden group hover:shadow-2xl hover:border-primary-500/30 transition-all duration-300 transform hover:-translate-y-2">
-        <div class="relative w-full max-h-[500px]">
-  <img src="images/gestion agent.png"
-       alt="Gestion des Agents"
-       class="w-full h-auto object-contain bg-black">
-  <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
-</div>
+      <!-- Projet 4 - Gestion des Agents -->
+      <div class="flex flex-col bg-secondary-800 rounded-lg border border-secondary-700 shadow-xl overflow-hidden group hover:shadow-2xl hover:border-primary-500/30 transition-all duration-300 hover:-translate-y-2">
+        <div class="relative w-full h-56 bg-black overflow-hidden">
+          <img src="images/gestion agent.png"
+               alt="Gestion des Agents"
+               class="project-img w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 cursor-pointer" />
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+        </div>
 
-        <div class="p-8">
+        <div class="flex flex-col flex-grow p-8">
           <div class="flex items-center justify-between mb-4">
             <h3 class="font-bold text-2xl text-primary-400">Gestion des Agents</h3>
             <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm font-medium border border-secondary-600">2025</span>
           </div>
-          <p class="text-gray-300 mb-6 leading-relaxed">Application complète de gestion des ressources humaines permettant le suivi des employés, la gestion des congés et l'administration des données du personnel.</p>
+
+          <p class="text-gray-300 mb-6 leading-relaxed flex-grow">
+            Application complète de gestion des ressources humaines permettant le suivi des employés, la gestion des congés et l'administration des données du personnel.
+          </p>
+
           <div class="flex flex-wrap gap-2 mb-6">
             <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">Ruby on Rails</span>
             <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">PostgreSQL</span>
             <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">Hotwire</span>
             <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">Tailwind CSS</span>
           </div>
+
           <div class="flex items-center justify-between">
             <a href="https://github.com/Ramatou81/gestion-agent" target="_blank" 
-              class="inline-flex items-center text-primary-400 hover:text-primary-300 font-medium transition-colors">
+               class="inline-flex items-center text-primary-400 hover:text-primary-300 font-medium transition-colors">
               <i class="fab fa-github mr-2"></i>Code source
             </a>
-            <a href="https://github.com/Ramatou81/gestion-agent" class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500 to-primary-700 text-white rounded-md hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300">
+            <a href="https://github.com/Ramatou81/gestion-agent" target="_blank" 
+               class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500 to-primary-700 text-white rounded-md hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300">
               <i class="fas fa-external-link-alt mr-2"></i>Voir le projet
             </a>
           </div>
         </div>
       </div>
 
- <!-- Projet 5 - Système de Gestion des événements -->
-<div class="bg-secondary-800 rounded-lg border border-secondary-700 shadow-xl overflow-hidden group hover:shadow-2xl hover:border-primary-500/30 transition-all duration-300 transform hover:-translate-y-2">
-        <div class="relative w-full max-h-[500px]">
-  <img src="images/evenement.png"
-       alt="Gestion des Événements"
-       class="w-full h-auto object-contain bg-black">
-  <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
-</div>
+      <!-- Projet 5 - Gestion des Événements -->
+      <div class="flex flex-col bg-secondary-800 rounded-lg border border-secondary-700 shadow-xl overflow-hidden group hover:shadow-2xl hover:border-primary-500/30 transition-all duration-300 hover:-translate-y-2">
+        <div class="relative w-full h-56 bg-black overflow-hidden">
+          <img src="images/evenement.png"
+               alt="Gestion des Événements"
+               class="project-img w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 cursor-pointer" />
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+        </div>
 
-        <div class="p-8">
+        <div class="flex flex-col flex-grow p-8">
           <div class="flex items-center justify-between mb-4">
             <h3 class="font-bold text-2xl text-primary-400">Gestion des Événements</h3>
             <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm font-medium border border-secondary-600">2025</span>
           </div>
-          <p class="text-gray-300 mb-6 leading-relaxed">Plateforme de gestion d'événements avec planification, inscription des participants, et suivi en temps réel. Interface intuitive pour organisateurs et participants.</p>
+
+          <p class="text-gray-300 mb-6 leading-relaxed flex-grow">
+            Plateforme de gestion d'événements avec planification, inscription des participants, et suivi en temps réel. Interface intuitive pour organisateurs et participants.
+          </p>
+
           <div class="flex flex-wrap gap-2 mb-6">
             <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">React.js</span>
             <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">Node.js</span>
             <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">PostgreSQL</span>
             <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">Tailwind CSS</span>
           </div>
+
           <div class="flex items-center justify-between">
             <a href="https://github.com/Ramatou81/GestionEv-nement" target="_blank" 
-              class="inline-flex items-center text-primary-400 hover:text-primary-300 font-medium transition-colors">
+               class="inline-flex items-center text-primary-400 hover:text-primary-300 font-medium transition-colors">
               <i class="fab fa-github mr-2"></i>Code source
             </a>
-            <a href="https://github.com/Ramatou81/GestionEv-nement" class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500 to-primary-700 text-white rounded-md hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300">
+            <a href="https://github.com/Ramatou81/GestionEv-nement" target="_blank" 
+               class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500 to-primary-700 text-white rounded-md hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300">
               <i class="fas fa-external-link-alt mr-2"></i>Voir le projet
             </a>
           </div>
         </div>
       </div>
 
+      <!-- Projet 6 - SubmitEase -->
+      <div class="flex flex-col bg-secondary-800 rounded-lg border border-secondary-700 shadow-xl overflow-hidden group hover:shadow-2xl hover:border-primary-500/30 transition-all duration-300 hover:-translate-y-2">
+        <div class="relative w-full h-56 bg-black overflow-hidden">
+          <img src="images/submit ease.png" 
+               alt="Gestion des Candidatures SubmitEase" 
+               class="project-img w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 cursor-pointer" />
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+        </div>
 
-<!-- Projet 6 - Système de Gestion des candidatures -->
-<div class="bg-secondary-800 rounded-lg border border-secondary-700 shadow-xl overflow-hidden group hover:shadow-2xl hover:border-primary-500/30 transition-all duration-300 transform hover:-translate-y-2">
-  <!-- Conteneur image -->
-  <div class="relative w-full">
-    <img src="images/submit ease.png" 
-         alt="Gestion des Candidatures SubmitEase" 
-         class="w-full h-auto object-contain bg-black">
-    <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
-  </div>
+        <div class="flex flex-col flex-grow p-8">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="font-extrabold text-2xl text-primary-400 tracking-tight">Gestion des Candidatures SubmitEase</h3>
+            <span class="px-3 py-1 bg-secondary-700/60 text-primary-400 rounded-full text-sm font-semibold border border-secondary-600">2025</span>
+          </div>
 
-  <!-- Contenu texte -->
-  <div class="p-8">
-    <div class="flex items-center justify-between mb-4">
-      <h3 class="font-bold text-2xl text-primary-400">Gestion des Candidatures SubmitEase</h3>
-      <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm font-medium border border-secondary-600">2025</span>
-    </div>
-    <p class="text-gray-300 mb-6 leading-relaxed">
-      Plateforme innovante de gestion des candidatures avec système de scoring automatisé, suivi des entretiens en temps réel, et tableaux de bord analytiques. Interface intuitive pour les recruteurs et les candidats avec intégration d'IA pour l'analyse des CV.
-    </p>
-    <div class="flex flex-wrap gap-2 mb-6">
-      <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">Ruby on Rails</span>
-      <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">React.js</span>
-      <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">PostgreSQL</span>
-      <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">Tailwind CSS</span>
-    </div>
-    <div class="flex items-center justify-between">
-      <a href="https://github.com/IMRANEHAMIDOU/submit-ease" target="_blank" 
-         class="inline-flex items-center text-primary-400 hover:text-primary-300 font-medium transition-colors">
-        <i class="fab fa-github mr-2"></i>Code source
-      </a>
-      <a href="https://github.com/IMRANEHAMIDOU/submit-ease" 
-         class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500 to-primary-700 text-white rounded-md hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300">
-        <i class="fas fa-external-link-alt mr-2"></i>Voir le projet
-      </a>
-    </div>
-  </div>
-</div>
+          <p class="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base flex-grow">
+            Plateforme innovante permettant aux structures de gérer facilement leurs concours et recrutements, avec suivi automatisé, reporting analytique et prise de décision rapide.
+          </p>
 
+          <div class="flex flex-wrap gap-3 mb-6">
+            <span class="px-3 py-1 bg-secondary-700/60 text-primary-400 rounded-full text-sm font-medium border border-secondary-600 hover:bg-secondary-600 transition-colors">Ruby on Rails</span>
+            <span class="px-3 py-1 bg-secondary-700/60 text-primary-400 rounded-full text-sm font-medium border border-secondary-600 hover:bg-secondary-600 transition-colors">React.js</span>
+            <span class="px-3 py-1 bg-secondary-700/60 text-primary-400 rounded-full text-sm font-medium border border-secondary-600 hover:bg-secondary-600 transition-colors">PostgreSQL</span>
+            <span class="px-3 py-1 bg-secondary-700/60 text-primary-400 rounded-full text-sm font-medium border border-secondary-600 hover:bg-secondary-600 transition-colors">Tailwind CSS</span>
+          </div>
 
-
-
-
+          <div class="flex items-center justify-between mt-auto gap-3 flex-wrap">
+            <a href="#" class="inline-flex items-center text-primary-400 hover:text-primary-300 font-medium transition-colors text-sm">
+              <i class="fab fa-github mr-2 text-sm"></i>Code source sur demande
+            </a>
+          </div>
+        </div>
+      </div>
 
     </div>
   </div>
 </section>
+
+<!-- LIGHTBOX - À placer juste AVANT la balise </body> -->
+<div id="lightbox" class="fixed inset-0 bg-black/90 hidden items-center justify-center z-50">
+  <img id="lightbox-img" src="" alt="" class="max-w-4xl max-h-[90vh] rounded-lg shadow-2xl" />
+  <button id="lightbox-close" class="absolute top-6 right-8 text-white text-4xl font-bold hover:text-primary-400 transition">&times;</button>
+</div>
+
+<!-- SCRIPT LIGHTBOX - À placer juste AVANT la balise </body> -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Sélection des éléments
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxClose = document.getElementById('lightbox-close');
+  const projectImages = document.querySelectorAll('.project-img');
+
+  // Vérification que les éléments existent
+  if (!lightbox || !lightboxImg || !lightboxClose) {
+    console.error('❌ Éléments du lightbox introuvables !');
+    return;
+  }
+
+  console.log('✅ Lightbox initialisé');
+  console.log('📸 Images trouvées :', projectImages.length);
+
+  // Ouvrir le lightbox au clic sur une image
+  projectImages.forEach(img => {
+    img.addEventListener('click', function(e) {
+      e.preventDefault();
+      console.log('🖼️ Image cliquée :', this.src);
+      
+      lightboxImg.src = this.src;
+      lightboxImg.alt = this.alt || 'Image du projet';
+      
+      // Afficher le lightbox
+      lightbox.classList.remove('hidden');
+      lightbox.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  // Fonction pour fermer le lightbox
+  function closeLightbox() {
+    console.log('❌ Fermeture du lightbox');
+    lightbox.classList.add('hidden');
+    lightbox.classList.remove('flex');
+    document.body.style.overflow = '';
+    lightboxImg.src = '';
+  }
+
+  // Fermer avec le bouton X
+  lightboxClose.addEventListener('click', closeLightbox);
+  
+  // Fermer en cliquant sur le fond noir
+  lightbox.addEventListener('click', function(e) {
+    if (e.target === lightbox) {
+      closeLightbox();
+    }
+  });
+  
+  // Fermer avec la touche Échap
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
+      closeLightbox();
+    }
+  });
+});
+</script>
+
+
 
 <section id="experience" class="py-20 bg-gray-900 text-white transition-colors duration-500">
   <div class="max-w-5xl mx-auto px-6">
@@ -617,7 +714,7 @@ Développeuse
           <h3 class="text-2xl font-bold text-white">Développeuse Web</h3>
           <p class="text-primary-300 font-semibold italic mb-3">Impact Plus</p>
           
-          <p class="text-gray-300 mt-2 leading-relaxed flex-grow">Conception d'une plateforme e-commerce <strong class="text-primary-400">Saraounia Market</strong> de A à Z.</p>
+          <p class="text-gray-300 mt-2 leading-relaxed flex-grow">Conception d'une plateforme e-commerce <strong class="text-primary-400">Saraounia Market</strong></p>
           
           <div class="flex flex-wrap gap-2 mt-4 pt-3 border-t border-secondary-700/50">
             <span class="px-3 py-1 bg-indigo-500/10 text-indigo-300 rounded-lg text-xs font-medium border border-indigo-500/30">React.js</span>
@@ -850,48 +947,50 @@ Développeuse
 </footer>
 
 <script>
-// Navigation smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth'
-            });
-            // Fermer le menu mobile si ouvert
-            if (mobileMenu.classList.contains('show')) {
-                toggleMobileMenu();
-            }
-        }
-    });
-});
+// --- Sélecteurs ---
+const menuButton = document.getElementById('menu-toggle');
 
-// Menu mobile
-const menuButton = document.querySelector('button.md\\:hidden');
+// --- Création du menu mobile ---
 const mobileMenu = document.createElement('div');
 mobileMenu.className = 'fixed inset-0 bg-secondary-900/95 backdrop-blur-sm transform translate-x-full transition-transform duration-300 ease-in-out z-40';
 mobileMenu.innerHTML = `
-    <div class="h-full flex flex-col items-center justify-center space-y-8 p-6">
-        <a href="#about" class="text-2xl font-medium text-gray-600 hover:text-primary-600 transition-colors">À propos</a>
-        <a href="#projects" class="text-2xl font-medium text-gray-600 hover:text-primary-600 transition-colors">Projets</a>
-        <a href="#experience" class="text-2xl font-medium text-gray-600 hover:text-primary-600 transition-colors">Expériences</a>
-        <a href="#skills" class="text-2xl font-medium text-gray-600 hover:text-primary-600 transition-colors">Compétences</a>
-        <a href="#contact" class="px-6 py-3 bg-gradient-to-r from-primary-500 to-primary-700 text-white rounded-md hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300">Contact</a>
-    </div>
+  <div class="h-full flex flex-col items-center justify-center space-y-8 p-6">
+    <a href="#about" class="text-2xl font-medium text-gray-200 hover:text-primary-400 transition-colors">À propos</a>
+    <a href="#projects" class="text-2xl font-medium text-gray-200 hover:text-primary-400 transition-colors">Projets</a>
+    <a href="#experience" class="text-2xl font-medium text-gray-200 hover:text-primary-400 transition-colors">Expériences</a>
+    <a href="#skills" class="text-2xl font-medium text-gray-200 hover:text-primary-400 transition-colors">Compétences</a>
+    <a href="#contact" class="px-6 py-3 bg-gradient-to-r from-primary-500 to-primary-700 text-white rounded-md hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300">Contact</a>
+  </div>
 `;
 document.body.appendChild(mobileMenu);
 
+// --- Fonction toggle ---
 function toggleMobileMenu() {
-    const isOpen = mobileMenu.classList.contains('translate-x-0');
-    mobileMenu.classList.toggle('translate-x-0');
-    menuButton.innerHTML = isOpen ? 
-        '<i class="fas fa-bars text-2xl"></i>' : 
-        '<i class="fas fa-times text-2xl"></i>';
-    document.body.style.overflow = isOpen ? '' : 'hidden';
+  const isOpen = mobileMenu.classList.contains('translate-x-0');
+  mobileMenu.classList.toggle('translate-x-0');
+  menuButton.innerHTML = isOpen 
+    ? '<i class="fas fa-bars text-2xl"></i>' 
+    : '<i class="fas fa-times text-2xl"></i>';
+  document.body.style.overflow = isOpen ? '' : 'hidden';
 }
 
 menuButton.addEventListener('click', toggleMobileMenu);
+
+// --- Smooth Scroll ---
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+      // Fermer le menu mobile si ouvert
+      if (mobileMenu.classList.contains('translate-x-0')) {
+        toggleMobileMenu();
+      }
+    }
+  });
+});
+
 
 // Gestion du formulaire de contact
 document.addEventListener('DOMContentLoaded', function() {
@@ -953,6 +1052,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     });
 });
+
 </script>
 
 </body>
