@@ -54,21 +54,31 @@
   <div class="w-full px-6 py-2">
     <div class="flex items-center justify-between max-w-7xl mx-auto">
       
-      <!-- Logo + Nom -->
-      <a href="#" class="flex items-center space-x-3 group">
-        <div class="relative w-12 h-12 flex items-center justify-center bg-gradient-to-br from-primary-400 via-primary-500 to-primary-600 rounded-full shadow-lg group-hover:shadow-primary-500/30 transition-all duration-300 overflow-hidden">
-          <div class="absolute inset-0 bg-gradient-to-tr from-primary-600/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-          
-          <!-- Logo -->
-          <img src="images/Logo.png" 
-               alt="Logo de Karimou Seyni Ramatou"
-               class="w-8 h-8 object-contain transform group-hover:scale-110 transition-transform duration-300">
-        </div>
+<a href="#" class="flex items-center space-x-3 md:space-x-4 group no-underline transition-all duration-300 hover:scale-[1.02] focus:scale-[1.02] focus:outline-none">
+  <!-- Logo Circle -->
+  <div class="relative w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full bg-gradient-to-br from-primary-500 via-primary-400 to-primary-600 shadow-md transition-all duration-500 group-hover:shadow-lg">
+    <div class="absolute inset-1 rounded-full bg-gradient-to-br from-secondary-900 via-secondary-800 to-secondary-900 flex items-center justify-center">
+      <span class="text-primary-300 font-bold text-xl md:text-2xl tracking-widest transition-all duration-500 group-hover:text-primary-200 group-hover:scale-105">
+        KRS
+      </span>
+    </div>
+    <div class="absolute -bottom-1 -right-1 w-3 h-3 bg-primary-400 rounded-full border-2 border-white shadow transition-all duration-500 group-hover:scale-110"></div>
+  </div>
 
-        <h1 class="text-base md:text-lg font-bold bg-gradient-to-r from-primary-400 via-primary-500 to-primary-600 bg-clip-text text-transparent group-hover:from-primary-500 group-hover:to-primary-400 transition-all duration-300">
-          Karimou Seyni Ramatou
-        </h1>
-      </a>
+  <!-- Nom -->
+  <div class="flex flex-col">
+    <h1 class="text-lg md:text-xl font-light text-gray-900 tracking-wide leading-tight transition-all duration-500">
+      <span class="font-semibold bg-gradient-to-r from-primary-600 to-primary-500 bg-clip-text text-transparent transition-all duration-500 group-hover:from-primary-500 group-hover:to-primary-400">
+        Karimou Seyni
+      </span>
+      <span class="text-gray-900 font-light italic"> Ramatou</span>
+    </h1>
+    <div class="h-0.5 w-8 bg-gradient-to-r from-primary-500 to-primary-400 mt-1 rounded transition-all duration-500 group-hover:w-12"></div>
+  </div>
+</a>
+
+
+
       <!-- Menu principal -->
       <nav id="nav-menu" class="hidden md:flex items-center space-x-8 ml-auto">
         <a href="#about" class="relative font-medium text-gray-300 hover:text-primary-400 transition-all duration-300 group">
@@ -96,7 +106,8 @@
     
 
       <!-- Menu mobile (burger) -->
-      <button class="md:hidden text-gray-300 hover:text-primary-400 focus:outline-none transition-colors duration-300">
+     <!-- Menu mobile (burger) -->
+      <button id="menu-toggle" class="md:hidden text-gray-300 hover:text-primary-400 focus:outline-none transition-colors duration-300">
         <i class="fas fa-bars text-2xl"></i>
       </button>
     </div>
@@ -115,7 +126,7 @@
     <div class="max-w-3xl mx-auto text-center px-6">
     <div class="relative group">
         <div class="absolute inset-0 bg-gradient-to-r from-primary-400 to-primary-600 rounded-full blur-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
-        <img src="image.jpg" alt="Profil" 
+        <img src="Rama.png" alt="Profil" 
             class="w-32 h-32 rounded-full mx-auto mb-6 border-2 border-primary-400/30 shadow-2xl shadow-primary-500/20 object-cover transform group-hover:scale-105 transition-all duration-500">
     </div>
 
@@ -400,12 +411,15 @@ Développeuse
       
       <!-- Projet 1 - Saraounia Market -->
       <div class="flex flex-col bg-secondary-800 rounded-xl border border-secondary-700 shadow-xl overflow-hidden group hover:shadow-2xl hover:border-primary-500/40 transition-all duration-300 hover:-translate-y-2">
-        <div class="relative w-full h-56 bg-black overflow-hidden">
-          <img src="images/saraounia-market.png"
-               alt="Saraounia Market"
-               class="project-img w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 cursor-pointer" />
-          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
-        </div>
+       <div class="relative w-full h-56 bg-black overflow-hidden group">
+  <a href="images/saraounia-market.png" class="lightbox block w-full h-full">
+    <img src="images/saraounia-market.png"
+         alt="Saraounia Market"
+         class="project-img w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 cursor-pointer" />
+  </a>
+  <!-- IMPORTANT: pointer-events-none pour laisser passer le clic vers l'image/lien -->
+  <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors pointer-events-none"></div>
+</div>
 
         <div class="flex flex-col flex-grow p-8">
           <div class="flex items-center justify-between mb-4">
@@ -434,12 +448,16 @@ Développeuse
 
       <!-- Projet 2 - Project Manager -->
       <div class="flex flex-col bg-secondary-800 rounded-lg border border-secondary-700 shadow-xl overflow-hidden group hover:shadow-2xl hover:border-primary-500/30 transition-all duration-300 hover:-translate-y-2">
-        <div class="relative w-full h-56 bg-black overflow-hidden">
-          <img src="images/projet manager.png"
-               alt="Project Manager"
-               class="project-img w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 cursor-pointer" />
-          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
-        </div>
+        <div class="relative w-full h-56 bg-black overflow-hidden group">
+  <a href="images/projet manager.png" class="lightbox block w-full h-full">
+    <img src="images/projet manager.png"
+        alt="Gestion manager"
+        class="project-img w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 cursor-pointer" />
+  </a>
+  <!-- IMPORTANT: pointer-events-none pour laisser passer le clic vers l'image/lien -->
+  <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors pointer-events-none"></div>
+</div>
+
 
         <div class="flex flex-col flex-grow p-8">
           <div class="flex items-center justify-between mb-4">
@@ -460,11 +478,11 @@ Développeuse
 
           <div class="flex items-center justify-between mt-auto">
             <a href="https://github.com/Ramatou81/ProjetManager" target="_blank" 
-               class="inline-flex items-center text-primary-400 hover:text-primary-300 font-medium transition-colors">
+              class="inline-flex items-center text-primary-400 hover:text-primary-300 font-medium transition-colors">
               <i class="fab fa-github mr-2"></i>Code source
             </a>
             <a href="https://github.com/Ramatou81/ProjetManager" target="_blank" 
-               class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500 to-primary-700 text-white rounded-md hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300">
+              class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500 to-primary-700 text-white rounded-md hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300">
               <i class="fas fa-external-link-alt mr-2"></i>Voir le projet
             </a>
           </div>
@@ -473,12 +491,16 @@ Développeuse
 
       <!-- Projet 3 - Plateforme de Blog -->
       <div class="flex flex-col bg-secondary-800 rounded-lg border border-secondary-700 shadow-xl overflow-hidden group hover:shadow-2xl hover:border-primary-500/30 transition-all duration-300 hover:-translate-y-2">
-        <div class="relative w-full h-56 bg-black overflow-hidden">
-          <img src="images/blog.png"
-               alt="Plateforme de Blog"
-               class="project-img w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 cursor-pointer" />
-          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
-        </div>
+        <div class="relative w-full h-56 bg-black overflow-hidden group">
+  <a href="images/blog.png" class="lightbox block w-full h-full">
+    <img src="images/blog.png"
+        alt="Blog"
+        class="project-img w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 cursor-pointer" />
+  </a>
+  <!-- IMPORTANT: pointer-events-none pour laisser passer le clic vers l'image/lien -->
+  <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors pointer-events-none"></div>
+</div>
+
       
         <div class="flex flex-col flex-grow p-8">
           <div class="flex items-center justify-between mb-4">
@@ -499,11 +521,11 @@ Développeuse
 
           <div class="flex items-center justify-between">
             <a href="https://github.com/Ramatou81/MonBog" target="_blank" 
-               class="inline-flex items-center text-primary-400 hover:text-primary-300 font-medium transition-colors">
+              class="inline-flex items-center text-primary-400 hover:text-primary-300 font-medium transition-colors">
               <i class="fab fa-github mr-2"></i>Code source
             </a>
             <a href="https://github.com/Ramatou81/MonBog" target="_blank" 
-               class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500 to-primary-700 text-white rounded-md hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300">
+              class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500 to-primary-700 text-white rounded-md hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300">
               <i class="fas fa-external-link-alt mr-2"></i>Voir le projet
             </a>
           </div>
@@ -512,12 +534,16 @@ Développeuse
 
       <!-- Projet 4 - Gestion des Agents -->
       <div class="flex flex-col bg-secondary-800 rounded-lg border border-secondary-700 shadow-xl overflow-hidden group hover:shadow-2xl hover:border-primary-500/30 transition-all duration-300 hover:-translate-y-2">
-        <div class="relative w-full h-56 bg-black overflow-hidden">
-          <img src="images/gestion agent.png"
-               alt="Gestion des Agents"
-               class="project-img w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 cursor-pointer" />
-          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
-        </div>
+        <div class="relative w-full h-56 bg-black overflow-hidden group">
+  <a href="images/gestion agent.png" class="lightbox block w-full h-full">
+    <img src="images/gestion agent.png"
+        alt="Gestion agent"
+        class="project-img w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 cursor-pointer" />
+  </a>
+  <!-- IMPORTANT: pointer-events-none pour laisser passer le clic vers l'image/lien -->
+  <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors pointer-events-none"></div>
+</div>
+
 
         <div class="flex flex-col flex-grow p-8">
           <div class="flex items-center justify-between mb-4">
@@ -538,11 +564,11 @@ Développeuse
 
           <div class="flex items-center justify-between">
             <a href="https://github.com/Ramatou81/gestion-agent" target="_blank" 
-               class="inline-flex items-center text-primary-400 hover:text-primary-300 font-medium transition-colors">
+              class="inline-flex items-center text-primary-400 hover:text-primary-300 font-medium transition-colors">
               <i class="fab fa-github mr-2"></i>Code source
             </a>
             <a href="https://github.com/Ramatou81/gestion-agent" target="_blank" 
-               class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500 to-primary-700 text-white rounded-md hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300">
+              class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500 to-primary-700 text-white rounded-md hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300">
               <i class="fas fa-external-link-alt mr-2"></i>Voir le projet
             </a>
           </div>
@@ -551,12 +577,16 @@ Développeuse
 
       <!-- Projet 5 - Gestion des Événements -->
       <div class="flex flex-col bg-secondary-800 rounded-lg border border-secondary-700 shadow-xl overflow-hidden group hover:shadow-2xl hover:border-primary-500/30 transition-all duration-300 hover:-translate-y-2">
-        <div class="relative w-full h-56 bg-black overflow-hidden">
-          <img src="images/evenement.png"
-               alt="Gestion des Événements"
-               class="project-img w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 cursor-pointer" />
-          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
-        </div>
+      <div class="relative w-full h-56 bg-black overflow-hidden group">
+  <a href="images/evenement.png" class="lightbox block w-full h-full">
+    <img src="images/evenement.png"
+        alt="Evenement"
+        class="project-img w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 cursor-pointer" />
+  </a>
+  <!-- IMPORTANT: pointer-events-none pour laisser passer le clic vers l'image/lien -->
+  <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors pointer-events-none"></div>
+</div>
+
 
         <div class="flex flex-col flex-grow p-8">
           <div class="flex items-center justify-between mb-4">
@@ -577,11 +607,11 @@ Développeuse
 
           <div class="flex items-center justify-between">
             <a href="https://github.com/Ramatou81/GestionEv-nement" target="_blank" 
-               class="inline-flex items-center text-primary-400 hover:text-primary-300 font-medium transition-colors">
+              class="inline-flex items-center text-primary-400 hover:text-primary-300 font-medium transition-colors">
               <i class="fab fa-github mr-2"></i>Code source
             </a>
             <a href="https://github.com/Ramatou81/GestionEv-nement" target="_blank" 
-               class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500 to-primary-700 text-white rounded-md hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300">
+              class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500 to-primary-700 text-white rounded-md hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300">
               <i class="fas fa-external-link-alt mr-2"></i>Voir le projet
             </a>
           </div>
@@ -590,12 +620,16 @@ Développeuse
 
       <!-- Projet 6 - SubmitEase -->
       <div class="flex flex-col bg-secondary-800 rounded-lg border border-secondary-700 shadow-xl overflow-hidden group hover:shadow-2xl hover:border-primary-500/30 transition-all duration-300 hover:-translate-y-2">
-        <div class="relative w-full h-56 bg-black overflow-hidden">
-          <img src="images/submit ease.png" 
-               alt="Gestion des Candidatures SubmitEase" 
-               class="project-img w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 cursor-pointer" />
-          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
-        </div>
+        <div class="relative w-full h-56 bg-black overflow-hidden group">
+  <a href="images/submit ease.png" class="lightbox block w-full h-full">
+    <img src="images/submit ease.png"
+        alt="SubmitEase"
+        class="project-img w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 cursor-pointer" />
+  </a>
+  <!-- IMPORTANT: pointer-events-none pour laisser passer le clic vers l'image/lien -->
+  <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors pointer-events-none"></div>
+</div>
+
 
         <div class="flex flex-col flex-grow p-8">
           <div class="flex items-center justify-between mb-4">
@@ -624,76 +658,73 @@ Développeuse
 
     </div>
   </div>
-</section>
 
-<!-- LIGHTBOX - À placer juste AVANT la balise </body> -->
-<div id="lightbox" class="fixed inset-0 bg-black/90 hidden items-center justify-center z-50">
-  <img id="lightbox-img" src="" alt="" class="max-w-4xl max-h-[90vh] rounded-lg shadow-2xl" />
-  <button id="lightbox-close" class="absolute top-6 right-8 text-white text-4xl font-bold hover:text-primary-400 transition">&times;</button>
+</section>
+<!-- Lightbox modal – place juste AVANT </body> -->
+<div id="lightbox-modal" class="hidden fixed inset-0 bg-black/80 items-center justify-center z-50">
+  <img id="lightbox-image" src="" alt="" class="max-h-[90%] max-w-[90%] rounded shadow-lg" />
+  <button id="lightbox-close" class="absolute top-6 right-8 text-white text-4xl leading-none">×</button>
 </div>
 
-<!-- SCRIPT LIGHTBOX - À placer juste AVANT la balise </body> -->
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Sélection des éléments
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightbox-img');
-  const lightboxClose = document.getElementById('lightbox-close');
-  const projectImages = document.querySelectorAll('.project-img');
+(function() {
+  // Permet d'initialiser même si tu utilises Turbo/Hotwire (Rails)
+  function initLightbox() {
+    if (window.__lightboxInit) return;
+    window.__lightboxInit = true;
 
-  // Vérification que les éléments existent
-  if (!lightbox || !lightboxImg || !lightboxClose) {
-    console.error('❌ Éléments du lightbox introuvables !');
-    return;
-  }
+    console.log("📜 Lightbox init");
 
-  console.log('✅ Lightbox initialisé');
-  console.log('📸 Images trouvées :', projectImages.length);
+    const links = document.querySelectorAll(".lightbox");
+    console.log("📸 Nombre de liens lightbox trouvés :", links.length);
 
-  // Ouvrir le lightbox au clic sur une image
-  projectImages.forEach(img => {
-    img.addEventListener('click', function(e) {
-      e.preventDefault();
-      console.log('🖼️ Image cliquée :', this.src);
-      
-      lightboxImg.src = this.src;
-      lightboxImg.alt = this.alt || 'Image du projet';
-      
-      // Afficher le lightbox
-      lightbox.classList.remove('hidden');
-      lightbox.classList.add('flex');
-      document.body.style.overflow = 'hidden';
+    const modal = document.getElementById("lightbox-modal");
+    const modalImg = document.getElementById("lightbox-image");
+    const closeBtn = document.getElementById("lightbox-close");
+
+    if (!modal || !modalImg || !closeBtn) {
+      console.error("❌ Lightbox : éléments manquants (modal/image/close).");
+      return;
+    }
+
+    links.forEach((link, idx) => {
+      // log pour debug
+      console.log("lightbox link", idx, link.getAttribute("href"));
+
+      link.addEventListener("click", function(e) {
+        e.preventDefault();
+        console.log("🖱️ clic lightbox :", this.getAttribute("href"));
+        // prend l'href si présent, sinon la src de l'image interne
+        const src = this.getAttribute("href") || this.querySelector("img")?.src;
+        modalImg.src = src || "";
+        modalImg.alt = this.querySelector("img")?.alt || "";
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+        document.body.style.overflow = "hidden";
+      });
     });
-  });
 
-  // Fonction pour fermer le lightbox
-  function closeLightbox() {
-    console.log('❌ Fermeture du lightbox');
-    lightbox.classList.add('hidden');
-    lightbox.classList.remove('flex');
-    document.body.style.overflow = '';
-    lightboxImg.src = '';
+    function closeModal() {
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+      modalImg.src = "";
+      document.body.style.overflow = "";
+    }
+
+    closeBtn.addEventListener("click", closeModal);
+    modal.addEventListener("click", function(e) {
+      if (e.target === modal) closeModal();
+    });
+    document.addEventListener("keydown", function(e) {
+      if (e.key === "Escape") closeModal();
+    });
   }
 
-  // Fermer avec le bouton X
-  lightboxClose.addEventListener('click', closeLightbox);
-  
-  // Fermer en cliquant sur le fond noir
-  lightbox.addEventListener('click', function(e) {
-    if (e.target === lightbox) {
-      closeLightbox();
-    }
-  });
-  
-  // Fermer avec la touche Échap
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
-      closeLightbox();
-    }
-  });
-});
+  // Si tu utilises Turbo (Rails) : capte aussi l'événement 'turbo:load'
+  document.addEventListener("DOMContentLoaded", initLightbox);
+  document.addEventListener("turbo:load", initLightbox);
+})();
 </script>
-
 
 
 <section id="experience" class="py-20 bg-gray-900 text-white transition-colors duration-500">
@@ -1052,6 +1083,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     });
 });
+
+
+
+
+
+
 
 </script>
 
