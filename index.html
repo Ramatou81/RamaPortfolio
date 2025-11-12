@@ -112,61 +112,95 @@
 </header>
 
 <!-- Hero moderne -->
-<section class="py-20 bg-gradient-to-br from-secondary-900 via-secondary-800 to-secondary-900">
-<div class="absolute inset-0">
-    <div class="absolute top-20 left-20 w-56 h-56 bg-primary-500/10 rounded-full mix-blend-multiply filter blur-3xl animate-pulse-slow"></div>
-    <div class="absolute top-40 right-20 w-56 h-56 bg-primary-600/10 rounded-full mix-blend-multiply filter blur-3xl animate-pulse-slower"></div>
-    <div class="absolute -bottom-20 left-40 w-56 h-56 bg-primary-700/10 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
-</div>
-
-<div class="relative pt-10 pb-14">
-    <div class="max-w-3xl mx-auto text-center px-6">
-    <div class="relative group">
-        <div class="absolute inset-0 bg-gradient-to-r from-primary-400 to-primary-600 rounded-full blur-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
-        <img src="Rama.png" alt="Profil" 
-            class="w-32 h-32 rounded-full mx-auto mb-6 border-2 border-primary-400/30 shadow-2xl shadow-primary-500/20 object-cover transform group-hover:scale-105 transition-all duration-500">
+<section class="relative py-16 bg-gradient-to-br from-secondary-900 via-secondary-800 to-secondary-900 overflow-hidden">
+    <!-- Simplified Background -->
+    <div class="absolute inset-0">
+        <div class="absolute top-20 left-20 w-56 h-56 bg-primary-500/10 rounded-full mix-blend-multiply filter blur-3xl animate-pulse-slow"></div>
+        <div class="absolute bottom-20 right-20 w-56 h-56 bg-primary-600/10 rounded-full mix-blend-multiply filter blur-3xl animate-pulse-slower"></div>
     </div>
 
-        <div class="space-y-4 mb-6">
-    <h2 class="text-4xl font-bold mb-4 text-white">
-Développeuse 
-<span class="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
-    Fullstack
-</span>
-</h2>
+    <div class="relative max-w-5xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+            <!-- Profile Image Column -->
+            <div class="relative order-2 md:order-1">
+                <div class="relative group">
+                    <div class="absolute inset-0 bg-gradient-to-r from-primary-400 to-primary-600 rounded-2xl blur-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
+                    <div class="relative bg-secondary-800/90 backdrop-blur-sm p-8 rounded-2xl border border-secondary-700/50 shadow-xl transform hover:scale-[1.01] transition-all duration-500">
+                        <div class="w-56 h-56 md:w-64 md:h-64 mx-auto relative mb-6">
+                            <div class="absolute inset-0 bg-gradient-to-r from-primary-400 to-primary-600 rounded-2xl rotate-6 transform transition-transform group-hover:rotate-12 duration-500"></div>
+                            <img src="Rama.png" alt="Profil" class="relative w-full h-full rounded-2xl object-cover border-2 border-secondary-700/50 shadow-xl">
+                            <!-- Image Overlay -->
+                            <div class="absolute inset-0 rounded-2xl bg-gradient-to-t from-secondary-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        </div>
+                        <!-- Social Links -->
+                        <div class="flex justify-center gap-6">
+                            <a href="https://github.com/Ramatou81" target="_blank" class="w-11 h-11 flex items-center justify-center rounded-lg bg-secondary-700/50 border border-secondary-600 hover:bg-primary-600/20 hover:border-primary-400/50 transition-all duration-300 hover:scale-110">
+                                <i class="fab fa-github text-lg text-primary-400"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/karimou-seyni-ramatou-107096260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="w-11 h-11 flex items-center justify-center rounded-lg bg-secondary-700/50 border border-secondary-600 hover:bg-primary-600/20 hover:border-primary-400/50 transition-all duration-300 hover:scale-110">
+                                <i class="fab fa-linkedin-in text-lg text-primary-400"></i>
+                            </a>
+                            <a href="mailto:karimouseyniramatou97@gmail.com"
+  class="w-11 h-11 flex items-center justify-center rounded-lg bg-secondary-700/50 border border-secondary-600 
+          hover:bg-primary-600/20 hover:border-primary-400/50 transition-all duration-300 hover:scale-110"
+  title="Envoyer un email">
+    <i class="fas fa-envelope text-lg text-primary-400"></i>
+</a>
 
-        <div class="flex flex-wrap justify-center gap-2 text-sm">
-        <span class="px-4 py-1.5 bg-gray-800/50 rounded-lg backdrop-blur-sm border border-gray-700/50 hover:border-primary-400/30 transition-all duration-300 text-gray-200">
-<i class="fas fa-shield-alt mr-2 text-primary-400"></i>Spécialiste Sécurité
-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-          <span class="px-4 py-1.5 bg-gray-800/50 rounded-lg backdrop-blur-sm border border-gray-700/50 hover:border-primary-400/30 transition-all duration-300 text-gray-200">
-            <i class="fas fa-network-wired mr-2 text-primary-400"></i>Réseaux
-          </span>
-          <span class="px-4 py-1.5 bg-gray-800/50 rounded-lg backdrop-blur-sm border border-gray-700/50 hover:border-primary-400/30 transition-all duration-300 text-gray-200">
-            <i class="fas fa-code mr-2 text-primary-400"></i>Développement Web
-          </span>
+            <!-- Text Content Column -->
+            <div class="text-center md:text-left order-1 md:order-2">
+                <div class="space-y-4">
+                    <div class="inline-flex items-center px-3 py-1 bg-primary-500/10 rounded-full border border-primary-400/20 backdrop-blur-sm">
+                        <span class="animate-pulse w-2 h-2 bg-primary-400 rounded-full mr-2"></span>
+                        <span class="text-primary-400 text-sm font-medium">Disponible pour des projets</span>
+                    </div>
+
+                    <h1 class="text-4xl font-bold leading-tight text-white">
+                        Développeuse 
+                        <span class="bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent block md:inline">
+                            Fullstack
+                        </span>
+                    </h1>
+
+                    <div class="flex flex-wrap justify-center md:justify-start gap-2">
+                        <span class="px-3 py-1.5 bg-secondary-800/90 rounded-lg backdrop-blur-sm border border-secondary-700/50 hover:border-primary-400/30 transition-all duration-300 text-gray-200 text-sm">
+                            <i class="fas fa-shield-alt mr-2 text-primary-400"></i>Sécurité
+                        </span>
+                        <span class="px-3 py-1.5 bg-secondary-800/90 rounded-lg backdrop-blur-sm border border-secondary-700/50 hover:border-primary-400/30 transition-all duration-300 text-gray-200 text-sm">
+                            <i class="fas fa-network-wired mr-2 text-primary-400"></i>Réseaux
+                        </span>
+                        <span class="px-3 py-1.5 bg-secondary-800/90 rounded-lg backdrop-blur-sm border border-secondary-700/50 hover:border-primary-400/30 transition-all duration-300 text-gray-200 text-sm">
+                            <i class="fas fa-code mr-2 text-primary-400"></i>Web
+                        </span>
+                    </div>
+
+                    <p class="text-gray-300 leading-relaxed">
+                        Passionnée par le développement et l'innovation, je crée des solutions web modernes et sécurisées.
+                    </p>
+
+                    <div class="flex flex-wrap justify-center md:justify-start gap-3 pt-2">
+                        <a href="#projects" class="group px-4 py-2 bg-gradient-to-r from-primary-500 to-primary-700 rounded-lg font-medium text-white shadow-lg shadow-primary-500/20 hover:shadow-xl hover:shadow-primary-500/30 transition-all duration-300">
+                            <span class="flex items-center text-sm">
+                                <i class="fas fa-laptop-code mr-2"></i>
+                                Voir mes projets
+                            </span>
+                        </a>
+                        <a href="CV_Karimou_Seyni_Ramatou.pdf" class="group px-4 py-2 bg-secondary-800/90 text-white rounded-lg font-medium border border-secondary-700/50 hover:border-primary-400/30 transition-all duration-300">
+                            <span class="flex items-center text-sm">
+                                <i class="fas fa-file-pdf mr-2 text-primary-400"></i>
+                                Télécharger CV
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p class="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Passionnée par le développement et l'innovation, je crée des solutions web modernes et sécurisées.
-        </p>
-      </div>
-
-      <div class="flex flex-wrap justify-center gap-4">
-        <a href="#projects" 
-          class="group relative px-6 py-3 bg-gradient-to-r from-primary-500 to-primary-700 rounded-md font-medium hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300 text-sm">
-          <span class="relative z-10 text-white"><i class="fas fa-laptop-code mr-2"></i>Voir mes projets</span>
-        </a>
-        <a href="CV_Karimou_Seyni_Ramatou.pdf" 
-          class="group relative px-6 py-3 bg-secondary-800 text-white rounded-md font-medium border border-secondary-700 hover:border-primary-400/30 hover:shadow-lg hover:shadow-primary-500/10 transition-all duration-300 text-sm">
-          <span class="relative z-10"><i class="fas fa-file-pdf mr-2 text-primary-400"></i>Télécharger CV</span>
-        </a>
-      </div>
-
-      <!-- Défilement indicateur -->
-    
     </div>
-  </div>
 </section>
 
 <style>
@@ -408,15 +442,116 @@ Développeuse
       
       <!-- Projet 1 - Saraounia Market -->
       <div class="flex flex-col bg-secondary-800 rounded-xl border border-secondary-700 shadow-xl overflow-hidden group hover:shadow-2xl hover:border-primary-500/40 transition-all duration-300 hover:-translate-y-2">
-      <div class="relative w-full h-56 bg-black overflow-hidden group">
-  <a href="images/saraounia-market.png" class="lightbox block w-full h-full">
-    <img src="images/saraounia-market.png"
-        alt="Saraounia Market"
-        class="project-img w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 cursor-pointer" />
-  </a>
-  <!-- IMPORTANT: pointer-events-none pour laisser passer le clic vers l'image/lien -->
-  <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors pointer-events-none"></div>
-</div>
+      <!-- Carousel d'images Saraounia Market -->
+      <div class="relative w-full h-64 bg-black overflow-hidden">
+          <div class="flex transition-transform duration-500 h-full" id="saraounia-carousel">
+              <!-- Page d'accueil -->
+              <div class="w-full h-full flex-shrink-0">
+                  <a href="images/saraounia-market.png" class="lightbox block w-full h-full">
+                      <img src="images/saraounia-market.png" alt="Page d'accueil Saraounia"
+                          class="w-full h-full object-contain" loading="lazy" />
+                      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                          <span class="text-white text-sm font-medium">Page d'accueil</span>
+                      </div>
+                  </a>
+              </div>
+              <!-- Catalogue Produits -->
+              <div class="w-full h-full flex-shrink-0">
+                  <a href="images/saraounia market admin.png" class="lightbox block w-full h-full">
+                      <img src="images/saraounia market admin.png" alt="Catalogue Produits"
+                          class="w-full h-full object-contain" loading="lazy" />
+                      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                          <span class="text-white text-sm font-medium">Dashboard Admin</span>
+                      </div>
+                  </a>
+              </div>
+              <!-- Profil Entrepreneur -->
+              <div class="w-full h-full flex-shrink-0">
+                  <a href="images/saraounia market entrepreneure.png" class="lightbox block w-full h-full">
+                      <img src="images/saraounia market entrepreneure.png" alt="Profil Entrepreneur"
+                          class="w-full h-full object-contain" loading="lazy" />
+                      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                          <span class="text-white text-sm font-medium">Espace Entrepreneur</span>
+                      </div>
+                  </a>
+              </div>
+          </div>
+          <!-- Navigation du carousel -->
+          <div class="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-10">
+              <button onclick="showSarauniaSlide(0)" class="w-2 h-2 rounded-full bg-white/50 transition-all duration-300"></button>
+              <button onclick="showSarauniaSlide(1)" class="w-2 h-2 rounded-full bg-white/50 transition-all duration-300"></button>
+              <button onclick="showSarauniaSlide(2)" class="w-2 h-2 rounded-full bg-white/50 transition-all duration-300"></button>
+          </div>
+          <!-- Overlay -->
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors pointer-events-none"></div>
+      </div>
+
+      <!-- Script pour le carousel Saraounia -->
+      <script>
+          let currentSarauniaSlide = 0;
+          const sarauniaCarousel = document.getElementById('saraounia-carousel');
+          const sarauniaButtons = sarauniaCarousel.parentElement.querySelectorAll('button');
+          const totalSarauniaSlides = sarauniaCarousel.children.length;
+          let sarauniaAutoRotationInterval;
+
+          function showSarauniaSlide(index) {
+              currentSarauniaSlide = (index + totalSarauniaSlides) % totalSarauniaSlides;
+              sarauniaCarousel.style.transform = `translateX(-${currentSarauniaSlide * 100}%)`;
+              
+              sarauniaButtons.forEach((btn, i) => {
+                  btn.style.backgroundColor = i === currentSarauniaSlide ? 'rgb(255, 255, 255)' : 'rgba(255, 255, 255, 0.5)';
+              });
+              // If the lightbox modal is open and it corresponds to this carousel, update the modal image
+              try {
+                const modal = document.getElementById('lightbox-modal');
+                const modalImg = document.getElementById('lightbox-image');
+                if (modal && modal.classList && !modal.classList.contains('hidden') && modal.dataset.carouselId === 'saraounia-carousel') {
+                  const slideLink = sarauniaCarousel.children[currentSarauniaSlide].querySelector('a.lightbox');
+                  if (slideLink) {
+                    const src = slideLink.getAttribute('href') || slideLink.querySelector('img')?.src || '';
+                    modalImg.src = src;
+                    modal.dataset.carouselIndex = currentSarauniaSlide;
+                  }
+                }
+              } catch (e) {
+                // silent fail - avoid breaking carousel if modal elements missing
+                console.error('Erreur lors de la mise à jour du lightbox depuis Saraounia carousel', e);
+              }
+          }
+
+          function startSarauniaAutoRotation() {
+              stopSarauniaAutoRotation();
+              sarauniaAutoRotationInterval = setInterval(() => {
+                  showSarauniaSlide(currentSarauniaSlide + 1);
+              }, 4000);
+          }
+
+          function stopSarauniaAutoRotation() {
+              if (sarauniaAutoRotationInterval) {
+                  clearInterval(sarauniaAutoRotationInterval);
+                  sarauniaAutoRotationInterval = null;
+              }
+          }
+
+          // Initialisation
+          showSarauniaSlide(0);
+          startSarauniaAutoRotation();
+
+          // Navigation clavier
+          sarauniaCarousel.addEventListener('keydown', (e) => {
+              if (e.key === 'ArrowLeft') {
+                  showSarauniaSlide(currentSarauniaSlide - 1);
+                  startSarauniaAutoRotation();
+              } else if (e.key === 'ArrowRight') {
+                  showSarauniaSlide(currentSarauniaSlide + 1);
+                  startSarauniaAutoRotation();
+              }
+          });
+
+          // Gestion du survol
+          sarauniaCarousel.parentElement.addEventListener('mouseenter', stopSarauniaAutoRotation);
+          sarauniaCarousel.parentElement.addEventListener('mouseleave', startSarauniaAutoRotation);
+      </script>
 
         <div class="flex flex-col flex-grow p-8">
           <div class="flex items-center justify-between mb-4">
@@ -445,15 +580,102 @@ Développeuse
 
       <!-- Projet 2 - Project Manager -->
       <div class="flex flex-col bg-secondary-800 rounded-lg border border-secondary-700 shadow-xl overflow-hidden group hover:shadow-2xl hover:border-primary-500/30 transition-all duration-300 hover:-translate-y-2">
-        <div class="relative w-full h-56 bg-black overflow-hidden group">
-  <a href="images/projet manager.png" class="lightbox block w-full h-full">
-    <img src="images/projet manager.png"
-        alt="Gestion manager"
-        class="project-img w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 cursor-pointer" />
-  </a>
-  <!-- IMPORTANT: pointer-events-none pour laisser passer le clic vers l'image/lien -->
-  <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors pointer-events-none"></div>
-</div>
+        <!-- Carousel d'images -->
+        <div class="relative w-full h-64 bg-black overflow-hidden">
+            <div class="flex transition-transform duration-500 h-full" id="project-manager-carousel">
+                <!-- Dashboard principal -->
+                <div class="w-full h-full flex-shrink-0">
+                    <a href="images/projet manager.png" class="lightbox block w-full h-full">
+                        <img src="images/projet manager.png" alt="Dashboard Principal"
+                            class="w-full h-full object-contain" loading="lazy" />
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <span class="text-white text-sm font-medium">Dashboard Principal</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Gestion des tâches -->
+                <div class="w-full h-full flex-shrink-0">
+                    <a href="images/projet manager voir.png" class="lightbox block w-full h-full">
+                        <img src="images/projet manager voir.png" alt="Gestion des tâches"
+                            class="w-full h-full object-contain" loading="lazy" />
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <span class="text-white text-sm font-medium">Affichage des tâches</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Suivi des projets -->
+                <div class="w-full h-full flex-shrink-0">
+                    <a href="images/projet manager edite.png" class="lightbox block w-full h-full">
+                        <img src="images/projet manager edite.png" alt="Suivi des projets"
+                            class="w-full h-full object-contain" loading="lazy" />
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <span class="text-white text-sm font-medium">Suivi des projets</span>
+                        </div>
+                    </a>
+                </div>
+        
+            </div>
+            <!-- Navigation du carousel -->
+            <div class="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-10">
+                <button onclick="showProjectManagerSlide(0)" class="w-2 h-2 rounded-full bg-white/50 transition-all duration-300"></button>
+                <button onclick="showProjectManagerSlide(1)" class="w-2 h-2 rounded-full bg-white/50 transition-all duration-300"></button>
+                <button onclick="showProjectManagerSlide(2)" class="w-2 h-2 rounded-full bg-white/50 transition-all duration-300"></button>
+            </div>
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors pointer-events-none"></div>
+        </div>
+
+        <!-- Script pour le carousel du Project Manager -->
+        <script>
+            let currentProjectManagerSlide = 0;
+            const projectManagerCarousel = document.getElementById('project-manager-carousel');
+            const projectManagerButtons = projectManagerCarousel.parentElement.querySelectorAll('button');
+            const totalProjectManagerSlides = projectManagerCarousel.children.length;
+            let projectManagerAutoRotationInterval;
+
+            function showProjectManagerSlide(index) {
+                currentProjectManagerSlide = (index + totalProjectManagerSlides) % totalProjectManagerSlides;
+                projectManagerCarousel.style.transform = `translateX(-${currentProjectManagerSlide * 100}%)`;
+                
+                projectManagerButtons.forEach((btn, i) => {
+                    btn.style.backgroundColor = i === currentProjectManagerSlide ? 'rgb(255, 255, 255)' : 'rgba(255, 255, 255, 0.5)';
+                });
+        try { updateModalIfMatching(projectManagerCarousel, currentProjectManagerSlide); } catch (e) { /* ignore */ }
+            }
+
+            function startProjectManagerAutoRotation() {
+                stopProjectManagerAutoRotation();
+                projectManagerAutoRotationInterval = setInterval(() => {
+                    showProjectManagerSlide(currentProjectManagerSlide + 1);
+                }, 4000);
+            }
+
+            function stopProjectManagerAutoRotation() {
+                if (projectManagerAutoRotationInterval) {
+                    clearInterval(projectManagerAutoRotationInterval);
+                    projectManagerAutoRotationInterval = null;
+                }
+            }
+
+            // Initialisation
+            showProjectManagerSlide(0);
+            startProjectManagerAutoRotation();
+
+            // Navigation clavier
+            projectManagerCarousel.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft') {
+                    showProjectManagerSlide(currentProjectManagerSlide - 1);
+                    startProjectManagerAutoRotation();
+                } else if (e.key === 'ArrowRight') {
+                    showProjectManagerSlide(currentProjectManagerSlide + 1);
+                    startProjectManagerAutoRotation();
+                }
+            });
+
+            // Gestion du survol
+            projectManagerCarousel.parentElement.addEventListener('mouseenter', stopProjectManagerAutoRotation);
+            projectManagerCarousel.parentElement.addEventListener('mouseleave', startProjectManagerAutoRotation);
+        </script>
 
 
         <div class="flex flex-col flex-grow p-8">
@@ -488,58 +710,285 @@ Développeuse
 
       <!-- Projet 3 - Plateforme de Blog -->
       <div class="flex flex-col bg-secondary-800 rounded-lg border border-secondary-700 shadow-xl overflow-hidden group hover:shadow-2xl hover:border-primary-500/30 transition-all duration-300 hover:-translate-y-2">
-        <div class="relative w-full h-56 bg-black overflow-hidden group">
-  <a href="images/blog.png" class="lightbox block w-full h-full">
-    <img src="images/blog.png"
-        alt="Blog"
-        class="project-img w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 cursor-pointer" />
-  </a>
-  <!-- IMPORTANT: pointer-events-none pour laisser passer le clic vers l'image/lien -->
-  <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors pointer-events-none"></div>
-</div>
+        <!-- Carousel d'images -->
+        <div class="relative w-full h-64 bg-black overflow-hidden">
+            <div class="flex transition-transform duration-500 h-full" id="blog-carousel">
+                <!-- Page d'accueil -->
+                <div class="w-full h-full flex-shrink-0">
+                    <a href="images/blog.png" class="lightbox block w-full h-full">
+                        <img src="images/blog.png" alt="Page d'accueil du Blog"
+                            class="w-full h-full object-contain" loading="lazy" />
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <span class="text-white text-sm font-medium">Page d'accueil</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Interface Admin -->
+                <div class="w-full h-full flex-shrink-0">
+                    <a href="images/dashboard admin blog.png" class="lightbox block w-full h-full">
+                        <img src="images/dashboard admin blog.png" alt="Interface Administrateur"
+                            class="w-full h-full object-contain" loading="lazy" />
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <span class="text-white text-sm font-medium">Interface Administrateur</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Interface Rédacteur -->
+                <div class="w-full h-full flex-shrink-0">
+                    <a href="images/dashboard redacteur blog.png" class="lightbox block w-full h-full">
+                        <img src="images/dashboard redacteur blog.png" alt="Interface Rédacteur"
+                            class="w-full h-full object-contain" loading="lazy" />
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <span class="text-white text-sm font-medium">Interface Rédacteur</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Interface Lecteur -->
+                <div class="w-full h-full flex-shrink-0">
+                    <a href="images/page de lecteur blog.png" class="lightbox block w-full h-full">
+                        <img src="images/page de lecteur blog.png" alt="Interface Lecteur"
+                            class="w-full h-full object-contain" loading="lazy" />
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <span class="text-white text-sm font-medium">Interface Lecteur</span>
+                        </div>
+                    </a>
+                </div>
 
-      
-        <div class="flex flex-col flex-grow p-8">
-          <div class="flex items-center justify-between mb-4">
-            <h3 class="font-bold text-2xl text-primary-400">Plateforme de Blog</h3>
-            <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm font-medium border border-secondary-600">2025</span>
-          </div>
 
-          <p class="text-gray-300 mb-6 leading-relaxed flex-grow">
-            Système de blog multi-utilisateurs avec éditeur WYSIWYG, gestion des catégories, commentaires et système de modération.
-          </p>
-
-          <div class="flex flex-wrap gap-2 mb-6">
-            <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">Ruby on Rails</span>
-            <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">Rails</span>
-            <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">PostgreSQL</span>
-            <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">Tailwind CSS</span>
-          </div>
-
-          <div class="flex items-center justify-between">
-            <a href="https://github.com/Ramatou81/MonBog" target="_blank" 
-              class="inline-flex items-center text-primary-400 hover:text-primary-300 font-medium transition-colors">
-              <i class="fab fa-github mr-2"></i>Code source
-            </a>
-            <a href="https://github.com/Ramatou81/MonBog" target="_blank" 
-              class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500 to-primary-700 text-white rounded-md hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300">
-              <i class="fas fa-external-link-alt mr-2"></i>Voir le projet
-            </a>
-          </div>
+                <div class="w-full h-full flex-shrink-0">
+                    <a href="images/lecteur peut commenter blog.png" class="lightbox block w-full h-full">
+                        <img src="images/lecteur peut commenter blog.png" alt="Interface de commentaire du lecteur"
+                            class="w-full h-full object-contain" loading="lazy" />
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <span class="text-white text-sm font-medium">Espace commentaires</span>
+                        </div>
+                    </a>
+                </div>            </div>
+            <!-- Navigation du carousel -->
+            <div class="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-10">
+                <button onclick="showSlide(0)" class="w-2 h-2 rounded-full bg-white/50 transition-all duration-300"></button>
+                <button onclick="showSlide(1)" class="w-2 h-2 rounded-full bg-white/50 transition-all duration-300"></button>
+                <button onclick="showSlide(2)" class="w-2 h-2 rounded-full bg-white/50 transition-all duration-300"></button>
+                <button onclick="showSlide(3)" class="w-2 h-2 rounded-full bg-white/50 transition-all duration-300"></button>
+                <button onclick="showSlide(4)" class="w-2 h-2 rounded-full bg-white/50 transition-all duration-300"></button>
+            </div>
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors pointer-events-none"></div>
         </div>
-      </div>
+
+        <div class="flex flex-col flex-grow p-8">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="font-bold text-2xl text-primary-400">Plateforme de Blog Multi-Rôles</h3>
+                <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm font-medium border border-secondary-600">2025</span>
+            </div>
+
+            <p class="text-gray-300 mb-6 leading-relaxed flex-grow">
+                Système de blog complet avec interfaces dédiées : administration pour la gestion globale, 
+                espace rédacteur avec éditeur WYSIWYG, et interface lecteur avec commentaires et interactions.
+            </p>
+
+            <div class="flex flex-wrap gap-2 mb-6">
+                <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">Ruby on Rails</span>
+                <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">PostgreSQL</span>
+                <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">Hotwire</span>
+                <span class="px-3 py-1 bg-secondary-700/50 text-primary-400 rounded-md text-sm border border-secondary-600">Tailwind CSS</span>
+            </div>
+
+            <div class="flex items-center justify-between">
+                <a href="https://github.com/Ramatou81/MonBog" target="_blank" 
+                    class="inline-flex items-center text-primary-400 hover:text-primary-300 font-medium transition-colors">
+                    <i class="fab fa-github mr-2"></i>Code source
+                </a>
+                <a href="https://github.com/Ramatou81/MonBog" target="_blank" 
+                    class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500 to-primary-700 text-white rounded-md hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300">
+                    <i class="fas fa-external-link-alt mr-2"></i>Voir le projet
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script pour le carousel -->
+    <script>
+  // Variables globales
+  let currentSlide = 0;
+  const carousel = document.getElementById('blog-carousel');
+  const buttons = carousel.parentElement.querySelectorAll('button');
+  const totalSlides = carousel.children.length;
+  let autoRotationInterval;
+
+  // Afficher une diapositive
+  function showSlide(index) {
+    currentSlide = (index + totalSlides) % totalSlides;
+    carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+    // Met à jour les indicateurs
+    buttons.forEach((btn, i) => {
+      btn.style.backgroundColor = i === currentSlide ? 'rgb(255, 255, 255)' : 'rgba(255, 255, 255, 0.5)';
+    });
+    try { updateModalIfMatching(carousel, currentSlide); } catch (e) { /* ignore */ }
+  }
+
+  // Démarrer la rotation automatique
+  function startAutoRotation() {
+    stopAutoRotation();
+    autoRotationInterval = setInterval(() => {
+      showSlide(currentSlide + 1);
+    }, 4000);
+  }
+
+  // Arrêter la rotation
+  function stopAutoRotation() {
+    if (autoRotationInterval) {
+      clearInterval(autoRotationInterval);
+      autoRotationInterval = null;
+    }
+  }
+
+  // Initialisation
+  showSlide(0);
+  startAutoRotation();
+
+  // Navigation via boutons
+  buttons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      showSlide(index);
+      startAutoRotation();
+    });
+  });
+
+  // Navigation clavier
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') showSlide(currentSlide - 1);
+    else if (e.key === 'ArrowRight') showSlide(currentSlide + 1);
+    startAutoRotation();
+  });
+
+  // Rotation continue même quand une lightbox est ouverte
+  document.addEventListener('click', (e) => {
+    if (e.target.closest('.lightbox')) {
+      startAutoRotation(); // relance la rotation si une image est ouverte
+    }
+  });
+
+  // Réinitialiser rotation après utilisation du clavier
+  let keyupTimer;
+  document.addEventListener('keyup', () => {
+    clearTimeout(keyupTimer);
+    keyupTimer = setTimeout(startAutoRotation, 2000);
+  });
+</script>
+
 
       <!-- Projet 4 - Gestion des Agents -->
       <div class="flex flex-col bg-secondary-800 rounded-lg border border-secondary-700 shadow-xl overflow-hidden group hover:shadow-2xl hover:border-primary-500/30 transition-all duration-300 hover:-translate-y-2">
-        <div class="relative w-full h-56 bg-black overflow-hidden group">
-  <a href="images/gestion agent.png" class="lightbox block w-full h-full">
-    <img src="images/gestion agent.png"
-        alt="Gestion agent"
-        class="project-img w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 cursor-pointer" />
-  </a>
-  <!-- IMPORTANT: pointer-events-none pour laisser passer le clic vers l'image/lien -->
-  <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors pointer-events-none"></div>
-</div>
+        <!-- Carousel d'images Gestion des Agents -->
+        <div class="relative w-full h-64 bg-black overflow-hidden">
+            <div class="flex transition-transform duration-500 h-full" id="gestion-agents-carousel">
+                <!-- Dashboard principal -->
+                <div class="w-full h-full flex-shrink-0">
+                    <a href="images/gestion agent.png" class="lightbox block w-full h-full">
+                        <img src="images/gestion agent.png" alt="Dashboard Gestion des Agents"
+                            class="w-full h-full object-contain" loading="lazy" />
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <span class="text-white text-sm font-medium">Page d'accueil</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Liste des agents -->
+                <div class="w-full h-full flex-shrink-0">
+                    <a href="images/gestion agent dashboard admin.png" class="lightbox block w-full h-full">
+                        <img src="images/gestion agent dashboard admin.png" alt="Liste des agents"
+                            class="w-full h-full object-contain" loading="lazy" />
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <span class="text-white text-sm font-medium">Dashboard Admin</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Planification -->
+                <div class="w-full h-full flex-shrink-0">
+                    <a href="images/gestion agent dashboard manager.png" class="lightbox block w-full h-full">
+                        <img src="images/gestion agent dashboard manager.png" alt="Planification"
+                            class="w-full h-full object-contain" loading="lazy" />
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <span class="text-white text-sm font-medium">Dashboard Manager</span>
+                        </div>
+                    </a>
+                </div>
+
+
+<div class="w-full h-full flex-shrink-0">
+                    <a href="images/gestion agent-dashboard agent.png" class="lightbox block w-full h-full">
+                        <img src="images/gestion agent-dashboard agent.png" alt="Planification"
+                            class="w-full h-full object-contain" loading="lazy" />
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <span class="text-white text-sm font-medium">Dashboard Agent</span>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <!-- Navigation du carousel -->
+            <div class="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-10">
+                <button onclick="showAgentsSlide(0)" class="w-2 h-2 rounded-full bg-white/50 transition-all duration-300"></button>
+                <button onclick="showAgentsSlide(1)" class="w-2 h-2 rounded-full bg-white/50 transition-all duration-300"></button>
+                <button onclick="showAgentsSlide(2)" class="w-2 h-2 rounded-full bg-white/50 transition-all duration-300"></button>
+                <button onclick="showAgentsSlide(3)" class="w-2 h-2 rounded-full bg-white/50 transition-all duration-300"></button>
+            </div>
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors pointer-events-none"></div>
+        </div>
+
+        <!-- Script pour le carousel Gestion des Agents -->
+        <script>
+            let currentAgentsSlide = 0;
+            const agentsCarousel = document.getElementById('gestion-agents-carousel');
+            const agentsButtons = agentsCarousel.parentElement.querySelectorAll('button');
+            const totalAgentsSlides = agentsCarousel.children.length;
+            let agentsAutoRotationInterval;
+
+            function showAgentsSlide(index) {
+                currentAgentsSlide = (index + totalAgentsSlides) % totalAgentsSlides;
+                agentsCarousel.style.transform = `translateX(-${currentAgentsSlide * 100}%)`;
+                
+                agentsButtons.forEach((btn, i) => {
+                    btn.style.backgroundColor = i === currentAgentsSlide ? 'rgb(255, 255, 255)' : 'rgba(255, 255, 255, 0.5)';
+                });
+        try { updateModalIfMatching(agentsCarousel, currentAgentsSlide); } catch (e) { /* ignore */ }
+            }
+
+            function startAgentsAutoRotation() {
+                stopAgentsAutoRotation();
+                agentsAutoRotationInterval = setInterval(() => {
+                    showAgentsSlide(currentAgentsSlide + 1);
+                }, 4000);
+            }
+
+            function stopAgentsAutoRotation() {
+                if (agentsAutoRotationInterval) {
+                    clearInterval(agentsAutoRotationInterval);
+                    agentsAutoRotationInterval = null;
+                }
+            }
+
+            // Initialisation
+            showAgentsSlide(0);
+            startAgentsAutoRotation();
+
+            // Navigation clavier
+            agentsCarousel.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft') {
+                    showAgentsSlide(currentAgentsSlide - 1);
+                    startAgentsAutoRotation();
+                } else if (e.key === 'ArrowRight') {
+                    showAgentsSlide(currentAgentsSlide + 1);
+                    startAgentsAutoRotation();
+                }
+            });
+
+            // Gestion du survol
+            agentsCarousel.parentElement.addEventListener('mouseenter', stopAgentsAutoRotation);
+            agentsCarousel.parentElement.addEventListener('mouseleave', startAgentsAutoRotation);
+        </script>
 
 
         <div class="flex flex-col flex-grow p-8">
@@ -574,15 +1023,103 @@ Développeuse
 
       <!-- Projet 5 - Gestion des Événements -->
       <div class="flex flex-col bg-secondary-800 rounded-lg border border-secondary-700 shadow-xl overflow-hidden group hover:shadow-2xl hover:border-primary-500/30 transition-all duration-300 hover:-translate-y-2">
-      <div class="relative w-full h-56 bg-black overflow-hidden group">
-  <a href="images/evenement.png" class="lightbox block w-full h-full">
-    <img src="images/evenement.png"
-        alt="Evenement"
-        class="project-img w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 cursor-pointer" />
-  </a>
-  <!-- IMPORTANT: pointer-events-none pour laisser passer le clic vers l'image/lien -->
-  <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors pointer-events-none"></div>
-</div>
+      <!-- Carousel d'images Gestion des Événements -->
+      <div class="relative w-full h-64 bg-black overflow-hidden">
+          <div class="flex transition-transform duration-500 h-full" id="events-carousel">
+              <!-- Vue principale -->
+              <div class="w-full h-full flex-shrink-0">
+                  <a href="images/evenement.png" class="lightbox block w-full h-full">
+                      <img src="images/evenement.png" alt="Vue principale événements"
+                          class="w-full h-full object-contain" loading="lazy" />
+                      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                          <span class="text-white text-sm font-medium">Dashboard Principal</span>
+                      </div>
+                  </a>
+              </div>
+              <!-- Calendrier des événements -->
+              <div class="w-full h-full flex-shrink-0">
+                  <a href="images/ajoute un evenement.png" class="lightbox block w-full h-full">
+                      <img src="images/ajoute un evenement.png" alt="Ajouter des événements"
+                          class="w-full h-full object-contain" loading="lazy" />
+                      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                          <span class="text-white text-sm font-medium">Ajouter un Événement</span>
+                      </div>
+                  </a>
+              </div>
+              <!-- Interface participants -->
+              <div class="w-full h-full flex-shrink-0">
+                  <a href="images/edite un evenement.png" class="lightbox block w-full h-full">
+                      <img src="images/edite un evenement.png" alt="Interface participants"
+                          class="w-full h-full object-contain" loading="lazy" />
+                      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                          <span class="text-white text-sm font-medium">Modifier un Événement</span>
+                      </div>
+                  </a>
+              </div>
+        
+          </div>
+          <!-- Navigation du carousel -->
+          <div class="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-10">
+              <button onclick="showEventsSlide(0)" class="w-2 h-2 rounded-full bg-white/50 transition-all duration-300"></button>
+              <button onclick="showEventsSlide(1)" class="w-2 h-2 rounded-full bg-white/50 transition-all duration-300"></button>
+              <button onclick="showEventsSlide(2)" class="w-2 h-2 rounded-full bg-white/50 transition-all duration-300"></button>
+          
+          </div>
+          <!-- Overlay -->
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors pointer-events-none"></div>
+      </div>
+
+      <!-- Script pour le carousel Événements -->
+      <script>
+          let currentEventsSlide = 0;
+          const eventsCarousel = document.getElementById('events-carousel');
+          const eventsButtons = eventsCarousel.parentElement.querySelectorAll('button');
+          const totalEventsSlides = eventsCarousel.children.length;
+          let eventsAutoRotationInterval;
+
+          function showEventsSlide(index) {
+              currentEventsSlide = (index + totalEventsSlides) % totalEventsSlides;
+              eventsCarousel.style.transform = `translateX(-${currentEventsSlide * 100}%)`;
+              
+              eventsButtons.forEach((btn, i) => {
+                  btn.style.backgroundColor = i === currentEventsSlide ? 'rgb(255, 255, 255)' : 'rgba(255, 255, 255, 0.5)';
+              });
+        try { updateModalIfMatching(eventsCarousel, currentEventsSlide); } catch (e) { /* ignore */ }
+          }
+
+          function startEventsAutoRotation() {
+              stopEventsAutoRotation();
+              eventsAutoRotationInterval = setInterval(() => {
+                  showEventsSlide(currentEventsSlide + 1);
+              }, 4000);
+          }
+
+          function stopEventsAutoRotation() {
+              if (eventsAutoRotationInterval) {
+                  clearInterval(eventsAutoRotationInterval);
+                  eventsAutoRotationInterval = null;
+              }
+          }
+
+          // Initialisation
+          showEventsSlide(0);
+          startEventsAutoRotation();
+
+          // Navigation clavier
+          eventsCarousel.addEventListener('keydown', (e) => {
+              if (e.key === 'ArrowLeft') {
+                  showEventsSlide(currentEventsSlide - 1);
+                  startEventsAutoRotation();
+              } else if (e.key === 'ArrowRight') {
+                  showEventsSlide(currentEventsSlide + 1);
+                  startEventsAutoRotation();
+              }
+          });
+
+          // Gestion du survol
+          eventsCarousel.parentElement.addEventListener('mouseenter', stopEventsAutoRotation);
+          eventsCarousel.parentElement.addEventListener('mouseleave', startEventsAutoRotation);
+      </script>
 
 
         <div class="flex flex-col flex-grow p-8">
@@ -617,15 +1154,112 @@ Développeuse
 
       <!-- Projet 6 - SubmitEase -->
       <div class="flex flex-col bg-secondary-800 rounded-lg border border-secondary-700 shadow-xl overflow-hidden group hover:shadow-2xl hover:border-primary-500/30 transition-all duration-300 hover:-translate-y-2">
-        <div class="relative w-full h-56 bg-black overflow-hidden group">
-  <a href="images/submit ease.png" class="lightbox block w-full h-full">
-    <img src="images/submit ease.png"
-        alt="SubmitEase"
-        class="project-img w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 cursor-pointer" />
-  </a>
-  <!-- IMPORTANT: pointer-events-none pour laisser passer le clic vers l'image/lien -->
-  <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors pointer-events-none"></div>
-</div>
+        <!-- Carousel d'images SubmitEase -->
+        <div class="relative w-full h-64 bg-black overflow-hidden">
+            <div class="flex transition-transform duration-500 h-full" id="submitease-carousel">
+                <!-- Dashboard principal -->
+                <div class="w-full h-full flex-shrink-0">
+                    <a href="images/submit ease.png" class="lightbox block w-full h-full">
+                        <img src="images/submit ease.png" alt="Dashboard SubmitEase"
+                            class="w-full h-full object-contain" loading="lazy" />
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <span class="text-white text-sm font-medium">Dashboard Principal</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Interface de soumission -->
+                <div class="w-full h-full flex-shrink-0">
+                    <a href="images/submit ease admin-dashboard.png" class="lightbox block w-full h-full">
+                        <img src="images/submit ease admin-dashboard.png" alt="Interface de soumission"
+                            class="w-full h-full object-contain" loading="lazy" />
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <span class="text-white text-sm font-medium">Interface Administrateur</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Gestion des candidatures -->
+                <div class="w-full h-full flex-shrink-0">
+                    <a href="images/submit-ease candidate-dashboard.png" class="lightbox block w-full h-full">
+                        <img src="images/submit-ease candidate-dashboard.png" alt="Gestion des candidatures"
+                            class="w-full h-full object-contain" loading="lazy" />
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <span class="text-white text-sm font-medium">Interface Candidat</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Analytics et rapports -->
+                <div class="w-full h-full flex-shrink-0">
+                    <a href="images/submit-ease superadmin-dashboard.png" class="lightbox block w-full h-full">
+                        <img src="images/submit-ease superadmin-dashboard.png" alt="Analytics et rapports"
+                            class="w-full h-full object-contain" loading="lazy" />
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <span class="text-white text-sm font-medium">Super Administrateur</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Navigation du carousel -->
+            <div class="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-10">
+                <button onclick="showSubmitSlide(0)" class="w-2 h-2 rounded-full bg-white/50 transition-all duration-300"></button>
+                <button onclick="showSubmitSlide(1)" class="w-2 h-2 rounded-full bg-white/50 transition-all duration-300"></button>
+                <button onclick="showSubmitSlide(2)" class="w-2 h-2 rounded-full bg-white/50 transition-all duration-300"></button>
+                <button onclick="showSubmitSlide(3)" class="w-2 h-2 rounded-full bg-white/50 transition-all duration-300"></button>
+            </div>
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors pointer-events-none"></div>
+        </div>
+
+        <!-- Script pour le carousel SubmitEase -->
+        <script>
+            let currentSubmitSlide = 0;
+            const submitCarousel = document.getElementById('submitease-carousel');
+            const submitButtons = submitCarousel.parentElement.querySelectorAll('button');
+            const totalSubmitSlides = submitCarousel.children.length;
+            let submitAutoRotationInterval;
+
+            function showSubmitSlide(index) {
+                currentSubmitSlide = (index + totalSubmitSlides) % totalSubmitSlides;
+                submitCarousel.style.transform = `translateX(-${currentSubmitSlide * 100}%)`;
+                
+                submitButtons.forEach((btn, i) => {
+                    btn.style.backgroundColor = i === currentSubmitSlide ? 'rgb(255, 255, 255)' : 'rgba(255, 255, 255, 0.5)';
+                });
+        try { updateModalIfMatching(submitCarousel, currentSubmitSlide); } catch (e) { /* ignore */ }
+            }
+
+            function startSubmitAutoRotation() {
+                stopSubmitAutoRotation();
+                submitAutoRotationInterval = setInterval(() => {
+                    showSubmitSlide(currentSubmitSlide + 1);
+                }, 4000);
+            }
+
+            function stopSubmitAutoRotation() {
+                if (submitAutoRotationInterval) {
+                    clearInterval(submitAutoRotationInterval);
+                    submitAutoRotationInterval = null;
+                }
+            }
+
+            // Initialisation
+            showSubmitSlide(0);
+            startSubmitAutoRotation();
+
+            // Navigation clavier
+            submitCarousel.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft') {
+                    showSubmitSlide(currentSubmitSlide - 1);
+                    startSubmitAutoRotation();
+                } else if (e.key === 'ArrowRight') {
+                    showSubmitSlide(currentSubmitSlide + 1);
+                    startSubmitAutoRotation();
+                }
+            });
+
+            // Gestion du survol
+            submitCarousel.parentElement.addEventListener('mouseenter', stopSubmitAutoRotation);
+            submitCarousel.parentElement.addEventListener('mouseleave', startSubmitAutoRotation);
+        </script>
 
 
         <div class="flex flex-col flex-grow p-8">
@@ -656,17 +1290,114 @@ Développeuse
 
 
 
-<!-- Projet 7 - Saraounia Market -->
+<!-- Projet 7 - Gestion Bancaire -->
     <div class="flex flex-col bg-secondary-800 rounded-xl border border-secondary-700 shadow-xl overflow-hidden group hover:shadow-2xl hover:border-primary-500/40 transition-all duration-300 hover:-translate-y-2">
-  <!-- Image du projet -->
-  <div class="relative w-full h-56 bg-black overflow-hidden group">
-    <a href="images/gestion bancaire.png" class="lightbox block w-full h-full">
-      <img src="images/gestion bancaire.png"
-          alt="Application Gestion Bancaire"
-          class="project-img w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 cursor-pointer" />
-    </a>
-    <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors pointer-events-none"></div>
+  <!-- Carousel d'images Gestion Bancaire -->
+  <div class="relative w-full h-64 bg-black overflow-hidden">
+      <div class="flex transition-transform duration-500 h-full" id="banking-carousel">
+          <!-- Dashboard principal -->
+          <div class="w-full h-full flex-shrink-0">
+              <a href="images/gestion bancaire.png" class="lightbox block w-full h-full">
+                  <img src="images/gestion bancaire.png" alt="Dashboard Principal"
+                      class="w-full h-full object-contain" loading="lazy" />
+                  <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                      <span class="text-white text-sm font-medium">Dashboard Principal</span>
+                  </div>
+              </a>
+          </div>
+          <!-- Transactions -->
+          <div class="w-full h-full flex-shrink-0">
+              <a href="images/gestion bancaire-compte.png" class="lightbox block w-full h-full">
+                  <img src="images/gestion bancaire-compte.png" alt="Interface des transactions"
+                      class="w-full h-full object-contain" loading="lazy" />
+                  <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                      <span class="text-white text-sm font-medium">Gestion des Transactions</span>
+                  </div>
+              </a>
+          </div>
+          <!-- Comptes -->
+          <div class="w-full h-full flex-shrink-0">
+              <a href="images/gestion bancaire-detaile d'un compte.png" class="lightbox block w-full h-full">
+                  <img src="images/gestion bancaire-detaile d'un compte.png" alt="Gestion des comptes"
+                      class="w-full h-full object-contain" loading="lazy" />
+                  <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                      <span class="text-white text-sm font-medium">Details sur un Compte</span>
+                  </div>
+              </a>
+          </div>
+          <!-- Statistiques -->
+          <div class="w-full h-full flex-shrink-0">
+              <a href="images/depot d'argent.png" class="lightbox block w-full h-full">
+                  <img src="images/depot d'argent.png" alt="Statistiques et rapports"
+                      class="w-full h-full object-contain" loading="lazy" />
+                  <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                      <span class="text-white text-sm font-medium">Faire un DEPOT</span>
+                  </div>
+              </a>
+          </div>
+      </div>
+      <!-- Navigation du carousel -->
+      <div class="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-10">
+          <button onclick="showBankingSlide(0)" class="w-2 h-2 rounded-full bg-white/50 transition-all duration-300"></button>
+          <button onclick="showBankingSlide(1)" class="w-2 h-2 rounded-full bg-white/50 transition-all duration-300"></button>
+          <button onclick="showBankingSlide(2)" class="w-2 h-2 rounded-full bg-white/50 transition-all duration-300"></button>
+          <button onclick="showBankingSlide(3)" class="w-2 h-2 rounded-full bg-white/50 transition-all duration-300"></button>
+      </div>
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors pointer-events-none"></div>
   </div>
+
+  <!-- Script pour le carousel Gestion Bancaire -->
+  <script>
+      let currentBankingSlide = 0;
+      const bankingCarousel = document.getElementById('banking-carousel');
+      const bankingButtons = bankingCarousel.parentElement.querySelectorAll('button');
+      const totalBankingSlides = bankingCarousel.children.length;
+      let bankingAutoRotationInterval;
+
+      function showBankingSlide(index) {
+          currentBankingSlide = (index + totalBankingSlides) % totalBankingSlides;
+          bankingCarousel.style.transform = `translateX(-${currentBankingSlide * 100}%)`;
+          
+          bankingButtons.forEach((btn, i) => {
+              btn.style.backgroundColor = i === currentBankingSlide ? 'rgb(255, 255, 255)' : 'rgba(255, 255, 255, 0.5)';
+          });
+      try { updateModalIfMatching(bankingCarousel, currentBankingSlide); } catch (e) { /* ignore */ }
+      }
+
+      function startBankingAutoRotation() {
+          stopBankingAutoRotation();
+          bankingAutoRotationInterval = setInterval(() => {
+              showBankingSlide(currentBankingSlide + 1);
+          }, 4000);
+      }
+
+      function stopBankingAutoRotation() {
+          if (bankingAutoRotationInterval) {
+              clearInterval(bankingAutoRotationInterval);
+              bankingAutoRotationInterval = null;
+          }
+      }
+
+      // Initialisation
+      showBankingSlide(0);
+      startBankingAutoRotation();
+
+      // Navigation clavier
+      bankingCarousel.addEventListener('keydown', (e) => {
+          if (e.key === 'ArrowLeft') {
+              showBankingSlide(currentBankingSlide - 1);
+              startBankingAutoRotation();
+          } else if (e.key === 'ArrowRight') {
+              showBankingSlide(currentBankingSlide + 1);
+              startBankingAutoRotation();
+          }
+      });
+
+      // Gestion du survol
+      bankingCarousel.parentElement.addEventListener('mouseenter', stopBankingAutoRotation);
+      bankingCarousel.parentElement.addEventListener('mouseleave', startBankingAutoRotation);
+  </script>
 
   <!-- Contenu -->
   <div class="flex flex-col flex-grow p-8">
@@ -744,6 +1475,25 @@ Développeuse
         const src = this.getAttribute("href") || this.querySelector("img")?.src;
         modalImg.src = src || "";
         modalImg.alt = this.querySelector("img")?.alt || "";
+
+        // If this link is part of a carousel, store carousel id and slide index so carousels
+        // can continue updating the modal image while it's open.
+        try {
+          const parentCarousel = this.closest('[id$="-carousel"]');
+          if (parentCarousel) {
+            modal.dataset.carouselId = parentCarousel.id;
+            const slides = Array.from(parentCarousel.children);
+            const slideEl = this.closest('.flex-shrink-0') || this.parentElement;
+            const slideIndex = slides.indexOf(slideEl);
+            modal.dataset.carouselIndex = slideIndex >= 0 ? slideIndex : 0;
+          } else {
+            modal.dataset.carouselId = '';
+            delete modal.dataset.carouselIndex;
+          }
+        } catch (err) {
+          console.error('Lightbox: erreur en détectant le carousel parent', err);
+        }
+
         modal.classList.remove("hidden");
         modal.classList.add("flex");
         document.body.style.overflow = "hidden";
@@ -754,6 +1504,15 @@ Développeuse
       modal.classList.add("hidden");
       modal.classList.remove("flex");
       modalImg.src = "";
+      // clear carousel markers so carousels stop updating the modal
+      try {
+        if (modal && modal.dataset) {
+          modal.dataset.carouselId = '';
+          delete modal.dataset.carouselIndex;
+        }
+      } catch (err) {
+        // ignore
+      }
       document.body.style.overflow = "";
     }
 
@@ -770,6 +1529,33 @@ Développeuse
   document.addEventListener("DOMContentLoaded", initLightbox);
   document.addEventListener("turbo:load", initLightbox);
 })();
+</script>
+
+<script>
+  // Global helper: when a carousel advances, update the open lightbox image
+  // if the modal was opened from that carousel. Exposed on window because
+  // carousel scripts run in the global scope.
+  window.updateModalIfMatching = function(carouselEl, index) {
+    try {
+      const modal = document.getElementById('lightbox-modal');
+      const modalImg = document.getElementById('lightbox-image');
+      if (!modal || !modalImg) return;
+
+      // modal must be visible and tied to the same carousel id
+      if (modal.classList && !modal.classList.contains('hidden') && modal.dataset && modal.dataset.carouselId === carouselEl.id) {
+        const slides = Array.from(carouselEl.children || []);
+        const slideIndex = ((index % slides.length) + slides.length) % slides.length; // safe mod
+        const slideLink = slides[slideIndex]?.querySelector('a.lightbox');
+        if (slideLink) {
+          const src = slideLink.getAttribute('href') || slideLink.querySelector('img')?.src || '';
+          modalImg.src = src;
+          modal.dataset.carouselIndex = slideIndex;
+        }
+      }
+    } catch (err) {
+      console.error('updateModalIfMatching error', err);
+    }
+  };
 </script>
 
 
@@ -1023,6 +1809,13 @@ Développeuse
     </div>
 </footer>
 
+<!-- Bouton Retour en haut -->
+<button id="backToTop" 
+        class="fixed bottom-8 right-8 bg-primary-500 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 z-50"
+        aria-label="Retour en haut de la page">
+    <i class="fas fa-arrow-up text-xl"></i>
+</button>
+
 <script>
 // --- Sélecteurs ---
 const menuButton = document.getElementById('menu-toggle');
@@ -1130,11 +1923,26 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Gestion du bouton Retour en haut
+const backToTopButton = document.getElementById('backToTop');
 
+function handleScroll() {
+    if (window.pageYOffset > 300) {
+        backToTopButton.classList.remove('opacity-0', 'invisible');
+        backToTopButton.classList.add('opacity-100');
+    } else {
+        backToTopButton.classList.add('opacity-0', 'invisible');
+        backToTopButton.classList.remove('opacity-100');
+    }
+}
 
-
-
-
+window.addEventListener('scroll', handleScroll);
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
 
 </script>
 
